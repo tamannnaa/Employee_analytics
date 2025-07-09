@@ -1,0 +1,3962 @@
+[
+    {
+        "employee_id": "EMP001",
+        "name": "Employee 1",
+        "email": "employee1@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 60800,
+        "join_date": "2023-08-23",
+        "performance_score": 2.9,
+        "is_active": false,
+        "skills": [
+            "SEO",
+            "Google Analytics",
+            "Email Marketing"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP002",
+        "name": "Employee 2",
+        "email": "employee2@company.com",
+        "department": "Engineering",
+        "position": "QA Tester",
+        "salary": 47658,
+        "join_date": "2020-09-28",
+        "performance_score": 5.0,
+        "is_active": true,
+        "skills": [
+            "Python",
+            "React",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP003",
+        "name": "Employee 3",
+        "email": "employee3@company.com",
+        "department": "Finance",
+        "position": "Accountant",
+        "salary": 90937,
+        "join_date": "2022-11-04",
+        "performance_score": 3.5,
+        "is_active": false,
+        "skills": [
+            "Forecasting",
+            "Budgeting",
+            "Excel"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP004",
+        "name": "Employee 4",
+        "email": "employee4@company.com",
+        "department": "Finance",
+        "position": "Controller",
+        "salary": 100552,
+        "join_date": "2021-02-24",
+        "performance_score": 4.0,
+        "is_active": true,
+        "skills": [
+            "Budgeting",
+            "Excel",
+            "Forecasting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP005",
+        "name": "Employee 5",
+        "email": "employee5@company.com",
+        "department": "Engineering",
+        "position": "QA Tester",
+        "salary": 106588,
+        "join_date": "2023-09-18",
+        "performance_score": 3.0,
+        "is_active": false,
+        "skills": [
+            "MongoDB",
+            "React",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP006",
+        "name": "Employee 6",
+        "email": "employee6@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 112974,
+        "join_date": "2024-03-05",
+        "performance_score": 2.9,
+        "is_active": true,
+        "skills": [
+            "MongoDB",
+            "React",
+            "Python"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP007",
+        "name": "Employee 7",
+        "email": "employee7@company.com",
+        "department": "Finance",
+        "position": "Controller",
+        "salary": 105189,
+        "join_date": "2023-12-04",
+        "performance_score": 2.6,
+        "is_active": false,
+        "skills": [
+            "Budgeting",
+            "Forecasting",
+            "Excel"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP008",
+        "name": "Employee 8",
+        "email": "employee8@company.com",
+        "department": "Finance",
+        "position": "Financial Analyst",
+        "salary": 52483,
+        "join_date": "2021-12-30",
+        "performance_score": 2.8,
+        "is_active": true,
+        "skills": [
+            "Forecasting",
+            "Excel",
+            "Budgeting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP009",
+        "name": "Employee 9",
+        "email": "employee9@company.com",
+        "department": "Design",
+        "position": "Product Designer",
+        "salary": 84419,
+        "join_date": "2020-06-26",
+        "performance_score": 4.9,
+        "is_active": false,
+        "skills": [
+            "Photoshop",
+            "Prototyping",
+            "Figma"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP010",
+        "name": "Employee 10",
+        "email": "employee10@company.com",
+        "department": "Marketing",
+        "position": "Content Strategist",
+        "salary": 88826,
+        "join_date": "2019-10-22",
+        "performance_score": 3.3,
+        "is_active": false,
+        "skills": [
+            "SEO",
+            "Content Creation",
+            "Email Marketing"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP011",
+        "name": "Employee 11",
+        "email": "employee11@company.com",
+        "department": "Sales",
+        "position": "Business Dev Rep",
+        "salary": 113505,
+        "join_date": "2021-08-12",
+        "performance_score": 4.5,
+        "is_active": true,
+        "skills": [
+            "CRM",
+            "Cold Calling",
+            "Negotiation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP012",
+        "name": "Employee 12",
+        "email": "employee12@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 113139,
+        "join_date": "2022-04-05",
+        "performance_score": 4.0,
+        "is_active": true,
+        "skills": [
+            "Content Creation",
+            "Email Marketing",
+            "Google Analytics"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP013",
+        "name": "Employee 13",
+        "email": "employee13@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 116753,
+        "join_date": "2021-10-24",
+        "performance_score": 3.8,
+        "is_active": false,
+        "skills": [
+            "SEO",
+            "Content Creation",
+            "Email Marketing"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP014",
+        "name": "Employee 14",
+        "email": "employee14@company.com",
+        "department": "Engineering",
+        "position": "QA Tester",
+        "salary": 44174,
+        "join_date": "2021-08-31",
+        "performance_score": 4.5,
+        "is_active": false,
+        "skills": [
+            "JavaScript",
+            "Docker",
+            "React"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP015",
+        "name": "Employee 15",
+        "email": "employee15@company.com",
+        "department": "Sales",
+        "position": "Account Manager",
+        "salary": 118140,
+        "join_date": "2019-01-20",
+        "performance_score": 3.5,
+        "is_active": false,
+        "skills": [
+            "Negotiation",
+            "CRM",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP016",
+        "name": "Employee 16",
+        "email": "employee16@company.com",
+        "department": "Engineering",
+        "position": "Software Developer",
+        "salary": 40547,
+        "join_date": "2022-10-07",
+        "performance_score": 4.2,
+        "is_active": true,
+        "skills": [
+            "React",
+            "MongoDB",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP017",
+        "name": "Employee 17",
+        "email": "employee17@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 42495,
+        "join_date": "2020-07-17",
+        "performance_score": 4.9,
+        "is_active": false,
+        "skills": [
+            "Google Analytics",
+            "Content Creation",
+            "Email Marketing"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP018",
+        "name": "Employee 18",
+        "email": "employee18@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 40289,
+        "join_date": "2023-06-10",
+        "performance_score": 2.9,
+        "is_active": false,
+        "skills": [
+            "Figma",
+            "Prototyping",
+            "Photoshop"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP019",
+        "name": "Employee 19",
+        "email": "employee19@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 89522,
+        "join_date": "2023-06-26",
+        "performance_score": 3.2,
+        "is_active": true,
+        "skills": [
+            "Photoshop",
+            "Figma",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP020",
+        "name": "Employee 20",
+        "email": "employee20@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 118417,
+        "join_date": "2019-05-23",
+        "performance_score": 2.6,
+        "is_active": true,
+        "skills": [
+            "Google Analytics",
+            "Content Creation",
+            "Email Marketing"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP021",
+        "name": "Employee 21",
+        "email": "employee21@company.com",
+        "department": "Sales",
+        "position": "Business Dev Rep",
+        "salary": 66597,
+        "join_date": "2019-07-25",
+        "performance_score": 4.8,
+        "is_active": false,
+        "skills": [
+            "CRM",
+            "Cold Calling",
+            "Negotiation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP022",
+        "name": "Employee 22",
+        "email": "employee22@company.com",
+        "department": "Design",
+        "position": "Graphic Designer",
+        "salary": 106232,
+        "join_date": "2023-09-26",
+        "performance_score": 4.2,
+        "is_active": true,
+        "skills": [
+            "Figma",
+            "Prototyping",
+            "Photoshop"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP023",
+        "name": "Employee 23",
+        "email": "employee23@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 79587,
+        "join_date": "2023-01-02",
+        "performance_score": 2.6,
+        "is_active": true,
+        "skills": [
+            "Content Creation",
+            "SEO",
+            "Email Marketing"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP024",
+        "name": "Employee 24",
+        "email": "employee24@company.com",
+        "department": "Design",
+        "position": "Product Designer",
+        "salary": 51084,
+        "join_date": "2023-02-16",
+        "performance_score": 3.9,
+        "is_active": true,
+        "skills": [
+            "Photoshop",
+            "Figma",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP025",
+        "name": "Employee 25",
+        "email": "employee25@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 119344,
+        "join_date": "2019-05-03",
+        "performance_score": 2.6,
+        "is_active": false,
+        "skills": [
+            "SEO",
+            "Email Marketing",
+            "Google Analytics"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP026",
+        "name": "Employee 26",
+        "email": "employee26@company.com",
+        "department": "Marketing",
+        "position": "Content Strategist",
+        "salary": 56206,
+        "join_date": "2023-01-04",
+        "performance_score": 2.5,
+        "is_active": false,
+        "skills": [
+            "SEO",
+            "Email Marketing",
+            "Google Analytics"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP027",
+        "name": "Employee 27",
+        "email": "employee27@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 51322,
+        "join_date": "2023-10-20",
+        "performance_score": 4.5,
+        "is_active": true,
+        "skills": [
+            "Email Marketing",
+            "Content Creation",
+            "SEO"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP028",
+        "name": "Employee 28",
+        "email": "employee28@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 112290,
+        "join_date": "2022-12-29",
+        "performance_score": 4.5,
+        "is_active": false,
+        "skills": [
+            "Recruitment",
+            "Payroll",
+            "Conflict Resolution"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP029",
+        "name": "Employee 29",
+        "email": "employee29@company.com",
+        "department": "Finance",
+        "position": "Controller",
+        "salary": 97981,
+        "join_date": "2022-08-23",
+        "performance_score": 3.4,
+        "is_active": true,
+        "skills": [
+            "Forecasting",
+            "Excel",
+            "Budgeting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP030",
+        "name": "Employee 30",
+        "email": "employee30@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 81207,
+        "join_date": "2024-01-14",
+        "performance_score": 4.6,
+        "is_active": true,
+        "skills": [
+            "Figma",
+            "Prototyping",
+            "Photoshop"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP031",
+        "name": "Employee 31",
+        "email": "employee31@company.com",
+        "department": "Engineering",
+        "position": "QA Tester",
+        "salary": 80175,
+        "join_date": "2019-04-19",
+        "performance_score": 3.1,
+        "is_active": false,
+        "skills": [
+            "Python",
+            "React",
+            "Docker"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP032",
+        "name": "Employee 32",
+        "email": "employee32@company.com",
+        "department": "Finance",
+        "position": "Controller",
+        "salary": 115560,
+        "join_date": "2022-10-05",
+        "performance_score": 4.4,
+        "is_active": false,
+        "skills": [
+            "Budgeting",
+            "Excel",
+            "Forecasting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP033",
+        "name": "Employee 33",
+        "email": "employee33@company.com",
+        "department": "Design",
+        "position": "Graphic Designer",
+        "salary": 68200,
+        "join_date": "2021-08-20",
+        "performance_score": 3.5,
+        "is_active": false,
+        "skills": [
+            "Photoshop",
+            "Prototyping",
+            "Figma"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP034",
+        "name": "Employee 34",
+        "email": "employee34@company.com",
+        "department": "Marketing",
+        "position": "Content Strategist",
+        "salary": 54456,
+        "join_date": "2019-03-15",
+        "performance_score": 3.2,
+        "is_active": false,
+        "skills": [
+            "Email Marketing",
+            "SEO",
+            "Google Analytics"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP035",
+        "name": "Employee 35",
+        "email": "employee35@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 59740,
+        "join_date": "2022-09-25",
+        "performance_score": 3.6,
+        "is_active": true,
+        "skills": [
+            "React",
+            "Docker",
+            "MongoDB"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP036",
+        "name": "Employee 36",
+        "email": "employee36@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 43029,
+        "join_date": "2022-09-24",
+        "performance_score": 2.9,
+        "is_active": false,
+        "skills": [
+            "Cold Calling",
+            "CRM",
+            "Negotiation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP037",
+        "name": "Employee 37",
+        "email": "employee37@company.com",
+        "department": "Finance",
+        "position": "Accountant",
+        "salary": 116825,
+        "join_date": "2019-11-07",
+        "performance_score": 3.9,
+        "is_active": false,
+        "skills": [
+            "Forecasting",
+            "Excel",
+            "Budgeting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP038",
+        "name": "Employee 38",
+        "email": "employee38@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 93848,
+        "join_date": "2023-12-21",
+        "performance_score": 4.9,
+        "is_active": true,
+        "skills": [
+            "Conflict Resolution",
+            "Recruitment",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP039",
+        "name": "Employee 39",
+        "email": "employee39@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 93777,
+        "join_date": "2021-10-20",
+        "performance_score": 3.9,
+        "is_active": true,
+        "skills": [
+            "Negotiation",
+            "Cold Calling",
+            "CRM"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP040",
+        "name": "Employee 40",
+        "email": "employee40@company.com",
+        "department": "Sales",
+        "position": "Account Manager",
+        "salary": 99201,
+        "join_date": "2023-07-27",
+        "performance_score": 4.5,
+        "is_active": true,
+        "skills": [
+            "Negotiation",
+            "Cold Calling",
+            "CRM"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP041",
+        "name": "Employee 41",
+        "email": "employee41@company.com",
+        "department": "Human Resources",
+        "position": "Recruiter",
+        "salary": 115730,
+        "join_date": "2023-07-14",
+        "performance_score": 2.7,
+        "is_active": false,
+        "skills": [
+            "Payroll",
+            "Recruitment",
+            "Conflict Resolution"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP042",
+        "name": "Employee 42",
+        "email": "employee42@company.com",
+        "department": "Engineering",
+        "position": "QA Tester",
+        "salary": 74215,
+        "join_date": "2019-07-07",
+        "performance_score": 3.8,
+        "is_active": true,
+        "skills": [
+            "MongoDB",
+            "Python",
+            "React"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP043",
+        "name": "Employee 43",
+        "email": "employee43@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 109360,
+        "join_date": "2024-03-11",
+        "performance_score": 4.7,
+        "is_active": true,
+        "skills": [
+            "Prototyping",
+            "Photoshop",
+            "Figma"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP044",
+        "name": "Employee 44",
+        "email": "employee44@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 53909,
+        "join_date": "2022-05-24",
+        "performance_score": 4.4,
+        "is_active": true,
+        "skills": [
+            "Figma",
+            "Prototyping",
+            "Photoshop"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP045",
+        "name": "Employee 45",
+        "email": "employee45@company.com",
+        "department": "Finance",
+        "position": "Financial Analyst",
+        "salary": 116992,
+        "join_date": "2020-05-08",
+        "performance_score": 2.6,
+        "is_active": false,
+        "skills": [
+            "Forecasting",
+            "Excel",
+            "Budgeting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP046",
+        "name": "Employee 46",
+        "email": "employee46@company.com",
+        "department": "Finance",
+        "position": "Accountant",
+        "salary": 60465,
+        "join_date": "2024-05-21",
+        "performance_score": 4.1,
+        "is_active": true,
+        "skills": [
+            "Budgeting",
+            "Forecasting",
+            "Excel"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP047",
+        "name": "Employee 47",
+        "email": "employee47@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 94995,
+        "join_date": "2020-09-16",
+        "performance_score": 3.4,
+        "is_active": true,
+        "skills": [
+            "Python",
+            "Docker",
+            "MongoDB"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP048",
+        "name": "Employee 48",
+        "email": "employee48@company.com",
+        "department": "Sales",
+        "position": "Account Manager",
+        "salary": 66728,
+        "join_date": "2021-12-10",
+        "performance_score": 2.8,
+        "is_active": false,
+        "skills": [
+            "Negotiation",
+            "CRM",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP049",
+        "name": "Employee 49",
+        "email": "employee49@company.com",
+        "department": "Finance",
+        "position": "Controller",
+        "salary": 119182,
+        "join_date": "2020-11-29",
+        "performance_score": 3.5,
+        "is_active": true,
+        "skills": [
+            "Excel",
+            "Budgeting",
+            "Forecasting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP050",
+        "name": "Employee 50",
+        "email": "employee50@company.com",
+        "department": "Human Resources",
+        "position": "Recruiter",
+        "salary": 81627,
+        "join_date": "2022-04-21",
+        "performance_score": 4.2,
+        "is_active": false,
+        "skills": [
+            "Payroll",
+            "Recruitment",
+            "Conflict Resolution"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP051",
+        "name": "Employee 51",
+        "email": "employee51@company.com",
+        "department": "Design",
+        "position": "Product Designer",
+        "salary": 48685,
+        "join_date": "2023-04-19",
+        "performance_score": 4.6,
+        "is_active": false,
+        "skills": [
+            "Figma",
+            "Prototyping",
+            "Photoshop"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP052",
+        "name": "Employee 52",
+        "email": "employee52@company.com",
+        "department": "Engineering",
+        "position": "Software Developer",
+        "salary": 55296,
+        "join_date": "2020-11-23",
+        "performance_score": 4.3,
+        "is_active": true,
+        "skills": [
+            "MongoDB",
+            "JavaScript",
+            "Python"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP053",
+        "name": "Employee 53",
+        "email": "employee53@company.com",
+        "department": "Human Resources",
+        "position": "HR Assistant",
+        "salary": 106387,
+        "join_date": "2022-04-24",
+        "performance_score": 3.1,
+        "is_active": false,
+        "skills": [
+            "Recruitment",
+            "Conflict Resolution",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP054",
+        "name": "Employee 54",
+        "email": "employee54@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 76275,
+        "join_date": "2021-07-06",
+        "performance_score": 4.8,
+        "is_active": false,
+        "skills": [
+            "Email Marketing",
+            "Content Creation",
+            "SEO"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP055",
+        "name": "Employee 55",
+        "email": "employee55@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 97507,
+        "join_date": "2022-02-15",
+        "performance_score": 4.2,
+        "is_active": true,
+        "skills": [
+            "Cold Calling",
+            "Negotiation",
+            "CRM"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP056",
+        "name": "Employee 56",
+        "email": "employee56@company.com",
+        "department": "Human Resources",
+        "position": "HR Assistant",
+        "salary": 87908,
+        "join_date": "2019-03-18",
+        "performance_score": 4.8,
+        "is_active": false,
+        "skills": [
+            "Recruitment",
+            "Payroll",
+            "Conflict Resolution"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP057",
+        "name": "Employee 57",
+        "email": "employee57@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 78404,
+        "join_date": "2022-12-09",
+        "performance_score": 3.6,
+        "is_active": false,
+        "skills": [
+            "Figma",
+            "Photoshop",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP058",
+        "name": "Employee 58",
+        "email": "employee58@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 102448,
+        "join_date": "2023-03-30",
+        "performance_score": 2.9,
+        "is_active": false,
+        "skills": [
+            "MongoDB",
+            "JavaScript",
+            "React"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP059",
+        "name": "Employee 59",
+        "email": "employee59@company.com",
+        "department": "Finance",
+        "position": "Financial Analyst",
+        "salary": 45627,
+        "join_date": "2020-10-20",
+        "performance_score": 2.5,
+        "is_active": true,
+        "skills": [
+            "Forecasting",
+            "Budgeting",
+            "Excel"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP060",
+        "name": "Employee 60",
+        "email": "employee60@company.com",
+        "department": "Engineering",
+        "position": "QA Tester",
+        "salary": 41691,
+        "join_date": "2020-10-22",
+        "performance_score": 3.0,
+        "is_active": false,
+        "skills": [
+            "React",
+            "Docker",
+            "Python"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP061",
+        "name": "Employee 61",
+        "email": "employee61@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 54937,
+        "join_date": "2022-04-03",
+        "performance_score": 3.6,
+        "is_active": true,
+        "skills": [
+            "Content Creation",
+            "Google Analytics",
+            "Email Marketing"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP062",
+        "name": "Employee 62",
+        "email": "employee62@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 52077,
+        "join_date": "2024-05-06",
+        "performance_score": 4.1,
+        "is_active": false,
+        "skills": [
+            "Prototyping",
+            "Figma",
+            "Photoshop"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP063",
+        "name": "Employee 63",
+        "email": "employee63@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 113987,
+        "join_date": "2020-09-17",
+        "performance_score": 3.5,
+        "is_active": false,
+        "skills": [
+            "Content Creation",
+            "SEO",
+            "Email Marketing"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP064",
+        "name": "Employee 64",
+        "email": "employee64@company.com",
+        "department": "Marketing",
+        "position": "Content Strategist",
+        "salary": 90838,
+        "join_date": "2021-07-08",
+        "performance_score": 3.5,
+        "is_active": false,
+        "skills": [
+            "Email Marketing",
+            "Content Creation",
+            "SEO"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP065",
+        "name": "Employee 65",
+        "email": "employee65@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 83366,
+        "join_date": "2023-01-29",
+        "performance_score": 4.7,
+        "is_active": true,
+        "skills": [
+            "Photoshop",
+            "Figma",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP066",
+        "name": "Employee 66",
+        "email": "employee66@company.com",
+        "department": "Engineering",
+        "position": "Software Developer",
+        "salary": 41055,
+        "join_date": "2020-12-12",
+        "performance_score": 3.7,
+        "is_active": false,
+        "skills": [
+            "JavaScript",
+            "Docker",
+            "React"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP067",
+        "name": "Employee 67",
+        "email": "employee67@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 48610,
+        "join_date": "2024-04-24",
+        "performance_score": 4.1,
+        "is_active": false,
+        "skills": [
+            "Google Analytics",
+            "Email Marketing",
+            "Content Creation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP068",
+        "name": "Employee 68",
+        "email": "employee68@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 65033,
+        "join_date": "2021-07-30",
+        "performance_score": 4.5,
+        "is_active": true,
+        "skills": [
+            "Payroll",
+            "Conflict Resolution",
+            "Recruitment"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP069",
+        "name": "Employee 69",
+        "email": "employee69@company.com",
+        "department": "Engineering",
+        "position": "Software Developer",
+        "salary": 74668,
+        "join_date": "2023-12-05",
+        "performance_score": 2.6,
+        "is_active": false,
+        "skills": [
+            "Python",
+            "MongoDB",
+            "React"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP070",
+        "name": "Employee 70",
+        "email": "employee70@company.com",
+        "department": "Finance",
+        "position": "Controller",
+        "salary": 101713,
+        "join_date": "2021-04-03",
+        "performance_score": 4.5,
+        "is_active": true,
+        "skills": [
+            "Forecasting",
+            "Budgeting",
+            "Excel"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP071",
+        "name": "Employee 71",
+        "email": "employee71@company.com",
+        "department": "Design",
+        "position": "Graphic Designer",
+        "salary": 113342,
+        "join_date": "2024-03-20",
+        "performance_score": 4.0,
+        "is_active": true,
+        "skills": [
+            "Photoshop",
+            "Figma",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP072",
+        "name": "Employee 72",
+        "email": "employee72@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 66507,
+        "join_date": "2020-10-21",
+        "performance_score": 3.4,
+        "is_active": false,
+        "skills": [
+            "Conflict Resolution",
+            "Recruitment",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP073",
+        "name": "Employee 73",
+        "email": "employee73@company.com",
+        "department": "Human Resources",
+        "position": "HR Assistant",
+        "salary": 80729,
+        "join_date": "2023-05-03",
+        "performance_score": 3.7,
+        "is_active": true,
+        "skills": [
+            "Conflict Resolution",
+            "Recruitment",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP074",
+        "name": "Employee 74",
+        "email": "employee74@company.com",
+        "department": "Finance",
+        "position": "Accountant",
+        "salary": 62629,
+        "join_date": "2022-03-11",
+        "performance_score": 3.6,
+        "is_active": true,
+        "skills": [
+            "Forecasting",
+            "Excel",
+            "Budgeting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP075",
+        "name": "Employee 75",
+        "email": "employee75@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 64849,
+        "join_date": "2019-01-31",
+        "performance_score": 4.1,
+        "is_active": true,
+        "skills": [
+            "Content Creation",
+            "SEO",
+            "Email Marketing"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP076",
+        "name": "Employee 76",
+        "email": "employee76@company.com",
+        "department": "Human Resources",
+        "position": "Recruiter",
+        "salary": 90243,
+        "join_date": "2019-02-17",
+        "performance_score": 2.6,
+        "is_active": true,
+        "skills": [
+            "Recruitment",
+            "Payroll",
+            "Conflict Resolution"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP077",
+        "name": "Employee 77",
+        "email": "employee77@company.com",
+        "department": "Design",
+        "position": "Graphic Designer",
+        "salary": 119825,
+        "join_date": "2023-09-30",
+        "performance_score": 3.4,
+        "is_active": true,
+        "skills": [
+            "Figma",
+            "Photoshop",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP078",
+        "name": "Employee 78",
+        "email": "employee78@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 90717,
+        "join_date": "2023-04-14",
+        "performance_score": 4.7,
+        "is_active": false,
+        "skills": [
+            "Content Creation",
+            "SEO",
+            "Google Analytics"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP079",
+        "name": "Employee 79",
+        "email": "employee79@company.com",
+        "department": "Design",
+        "position": "Graphic Designer",
+        "salary": 78911,
+        "join_date": "2020-05-31",
+        "performance_score": 4.2,
+        "is_active": false,
+        "skills": [
+            "Photoshop",
+            "Figma",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP080",
+        "name": "Employee 80",
+        "email": "employee80@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 98594,
+        "join_date": "2020-05-20",
+        "performance_score": 4.9,
+        "is_active": true,
+        "skills": [
+            "Negotiation",
+            "Cold Calling",
+            "CRM"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP081",
+        "name": "Employee 81",
+        "email": "employee81@company.com",
+        "department": "Finance",
+        "position": "Accountant",
+        "salary": 98206,
+        "join_date": "2021-08-10",
+        "performance_score": 2.8,
+        "is_active": false,
+        "skills": [
+            "Budgeting",
+            "Forecasting",
+            "Excel"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP082",
+        "name": "Employee 82",
+        "email": "employee82@company.com",
+        "department": "Human Resources",
+        "position": "HR Assistant",
+        "salary": 69925,
+        "join_date": "2023-03-10",
+        "performance_score": 4.4,
+        "is_active": true,
+        "skills": [
+            "Recruitment",
+            "Payroll",
+            "Conflict Resolution"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP083",
+        "name": "Employee 83",
+        "email": "employee83@company.com",
+        "department": "Design",
+        "position": "Product Designer",
+        "salary": 102079,
+        "join_date": "2020-12-16",
+        "performance_score": 4.1,
+        "is_active": false,
+        "skills": [
+            "Figma",
+            "Prototyping",
+            "Photoshop"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP084",
+        "name": "Employee 84",
+        "email": "employee84@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 108134,
+        "join_date": "2023-07-25",
+        "performance_score": 4.9,
+        "is_active": false,
+        "skills": [
+            "Prototyping",
+            "Photoshop",
+            "Figma"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP085",
+        "name": "Employee 85",
+        "email": "employee85@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 42221,
+        "join_date": "2022-02-14",
+        "performance_score": 2.7,
+        "is_active": false,
+        "skills": [
+            "CRM",
+            "Negotiation",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP086",
+        "name": "Employee 86",
+        "email": "employee86@company.com",
+        "department": "Finance",
+        "position": "Controller",
+        "salary": 58401,
+        "join_date": "2022-01-25",
+        "performance_score": 4.5,
+        "is_active": true,
+        "skills": [
+            "Forecasting",
+            "Excel",
+            "Budgeting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP087",
+        "name": "Employee 87",
+        "email": "employee87@company.com",
+        "department": "Sales",
+        "position": "Business Dev Rep",
+        "salary": 113646,
+        "join_date": "2024-04-03",
+        "performance_score": 4.9,
+        "is_active": false,
+        "skills": [
+            "Negotiation",
+            "CRM",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP088",
+        "name": "Employee 88",
+        "email": "employee88@company.com",
+        "department": "Engineering",
+        "position": "Software Developer",
+        "salary": 100754,
+        "join_date": "2019-10-19",
+        "performance_score": 3.6,
+        "is_active": true,
+        "skills": [
+            "Docker",
+            "Python",
+            "MongoDB"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP089",
+        "name": "Employee 89",
+        "email": "employee89@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 89494,
+        "join_date": "2020-08-24",
+        "performance_score": 4.8,
+        "is_active": true,
+        "skills": [
+            "CRM",
+            "Cold Calling",
+            "Negotiation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP090",
+        "name": "Employee 90",
+        "email": "employee90@company.com",
+        "department": "Finance",
+        "position": "Controller",
+        "salary": 97601,
+        "join_date": "2019-02-24",
+        "performance_score": 3.2,
+        "is_active": false,
+        "skills": [
+            "Budgeting",
+            "Excel",
+            "Forecasting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP091",
+        "name": "Employee 91",
+        "email": "employee91@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 95391,
+        "join_date": "2022-01-19",
+        "performance_score": 4.3,
+        "is_active": true,
+        "skills": [
+            "Cold Calling",
+            "CRM",
+            "Negotiation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP092",
+        "name": "Employee 92",
+        "email": "employee92@company.com",
+        "department": "Design",
+        "position": "Product Designer",
+        "salary": 96489,
+        "join_date": "2022-12-06",
+        "performance_score": 4.3,
+        "is_active": false,
+        "skills": [
+            "Figma",
+            "Photoshop",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP093",
+        "name": "Employee 93",
+        "email": "employee93@company.com",
+        "department": "Design",
+        "position": "Graphic Designer",
+        "salary": 97091,
+        "join_date": "2021-01-09",
+        "performance_score": 2.8,
+        "is_active": false,
+        "skills": [
+            "Figma",
+            "Photoshop",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP094",
+        "name": "Employee 94",
+        "email": "employee94@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 111244,
+        "join_date": "2023-10-22",
+        "performance_score": 4.9,
+        "is_active": true,
+        "skills": [
+            "MongoDB",
+            "Python",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP095",
+        "name": "Employee 95",
+        "email": "employee95@company.com",
+        "department": "Human Resources",
+        "position": "Recruiter",
+        "salary": 40020,
+        "join_date": "2019-04-16",
+        "performance_score": 4.1,
+        "is_active": true,
+        "skills": [
+            "Payroll",
+            "Recruitment",
+            "Conflict Resolution"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP096",
+        "name": "Employee 96",
+        "email": "employee96@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 110938,
+        "join_date": "2021-04-11",
+        "performance_score": 3.3,
+        "is_active": true,
+        "skills": [
+            "Photoshop",
+            "Figma",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP097",
+        "name": "Employee 97",
+        "email": "employee97@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 118014,
+        "join_date": "2020-08-19",
+        "performance_score": 3.9,
+        "is_active": true,
+        "skills": [
+            "Python",
+            "JavaScript",
+            "MongoDB"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP098",
+        "name": "Employee 98",
+        "email": "employee98@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 44050,
+        "join_date": "2021-12-01",
+        "performance_score": 4.4,
+        "is_active": true,
+        "skills": [
+            "Email Marketing",
+            "Google Analytics",
+            "SEO"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP099",
+        "name": "Employee 99",
+        "email": "employee99@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 83709,
+        "join_date": "2024-01-04",
+        "performance_score": 3.2,
+        "is_active": true,
+        "skills": [
+            "Email Marketing",
+            "Google Analytics",
+            "Content Creation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP100",
+        "name": "Employee 100",
+        "email": "employee100@company.com",
+        "department": "Finance",
+        "position": "Controller",
+        "salary": 76054,
+        "join_date": "2020-06-10",
+        "performance_score": 2.8,
+        "is_active": false,
+        "skills": [
+            "Budgeting",
+            "Excel",
+            "Forecasting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP101",
+        "name": "Employee 101",
+        "email": "employee101@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 70450,
+        "join_date": "2023-03-04",
+        "performance_score": 4.2,
+        "is_active": true,
+        "skills": [
+            "SEO",
+            "Google Analytics",
+            "Content Creation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP102",
+        "name": "Employee 102",
+        "email": "employee102@company.com",
+        "department": "Engineering",
+        "position": "QA Tester",
+        "salary": 95121,
+        "join_date": "2022-12-23",
+        "performance_score": 4.1,
+        "is_active": false,
+        "skills": [
+            "Docker",
+            "MongoDB",
+            "Python"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP103",
+        "name": "Employee 103",
+        "email": "employee103@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 41164,
+        "join_date": "2021-05-06",
+        "performance_score": 3.0,
+        "is_active": true,
+        "skills": [
+            "Photoshop",
+            "Prototyping",
+            "Figma"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP104",
+        "name": "Employee 104",
+        "email": "employee104@company.com",
+        "department": "Sales",
+        "position": "Account Manager",
+        "salary": 75268,
+        "join_date": "2024-05-16",
+        "performance_score": 4.1,
+        "is_active": false,
+        "skills": [
+            "CRM",
+            "Negotiation",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP105",
+        "name": "Employee 105",
+        "email": "employee105@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 111227,
+        "join_date": "2021-04-24",
+        "performance_score": 4.3,
+        "is_active": false,
+        "skills": [
+            "Conflict Resolution",
+            "Payroll",
+            "Recruitment"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP106",
+        "name": "Employee 106",
+        "email": "employee106@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 72722,
+        "join_date": "2021-04-05",
+        "performance_score": 3.0,
+        "is_active": false,
+        "skills": [
+            "React",
+            "Python",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP107",
+        "name": "Employee 107",
+        "email": "employee107@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 44658,
+        "join_date": "2023-01-11",
+        "performance_score": 3.4,
+        "is_active": false,
+        "skills": [
+            "Conflict Resolution",
+            "Payroll",
+            "Recruitment"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP108",
+        "name": "Employee 108",
+        "email": "employee108@company.com",
+        "department": "Sales",
+        "position": "Account Manager",
+        "salary": 114497,
+        "join_date": "2020-02-16",
+        "performance_score": 2.6,
+        "is_active": true,
+        "skills": [
+            "Negotiation",
+            "CRM",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP109",
+        "name": "Employee 109",
+        "email": "employee109@company.com",
+        "department": "Engineering",
+        "position": "Software Developer",
+        "salary": 59703,
+        "join_date": "2022-12-20",
+        "performance_score": 3.9,
+        "is_active": false,
+        "skills": [
+            "MongoDB",
+            "Docker",
+            "React"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP110",
+        "name": "Employee 110",
+        "email": "employee110@company.com",
+        "department": "Engineering",
+        "position": "Software Developer",
+        "salary": 73066,
+        "join_date": "2021-10-06",
+        "performance_score": 2.8,
+        "is_active": true,
+        "skills": [
+            "Python",
+            "React",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP111",
+        "name": "Employee 111",
+        "email": "employee111@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 92846,
+        "join_date": "2019-08-31",
+        "performance_score": 4.0,
+        "is_active": true,
+        "skills": [
+            "Conflict Resolution",
+            "Recruitment",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP112",
+        "name": "Employee 112",
+        "email": "employee112@company.com",
+        "department": "Human Resources",
+        "position": "HR Assistant",
+        "salary": 40915,
+        "join_date": "2019-04-05",
+        "performance_score": 4.5,
+        "is_active": false,
+        "skills": [
+            "Payroll",
+            "Conflict Resolution",
+            "Recruitment"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP113",
+        "name": "Employee 113",
+        "email": "employee113@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 47613,
+        "join_date": "2024-01-01",
+        "performance_score": 3.5,
+        "is_active": false,
+        "skills": [
+            "Python",
+            "React",
+            "Docker"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP114",
+        "name": "Employee 114",
+        "email": "employee114@company.com",
+        "department": "Marketing",
+        "position": "Content Strategist",
+        "salary": 41870,
+        "join_date": "2022-07-10",
+        "performance_score": 3.1,
+        "is_active": false,
+        "skills": [
+            "Google Analytics",
+            "SEO",
+            "Email Marketing"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP115",
+        "name": "Employee 115",
+        "email": "employee115@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 69171,
+        "join_date": "2022-01-13",
+        "performance_score": 2.6,
+        "is_active": true,
+        "skills": [
+            "SEO",
+            "Google Analytics",
+            "Content Creation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP116",
+        "name": "Employee 116",
+        "email": "employee116@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 87337,
+        "join_date": "2019-11-16",
+        "performance_score": 4.2,
+        "is_active": false,
+        "skills": [
+            "Email Marketing",
+            "Content Creation",
+            "SEO"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP117",
+        "name": "Employee 117",
+        "email": "employee117@company.com",
+        "department": "Marketing",
+        "position": "Content Strategist",
+        "salary": 42664,
+        "join_date": "2023-02-11",
+        "performance_score": 5.0,
+        "is_active": true,
+        "skills": [
+            "Content Creation",
+            "Email Marketing",
+            "Google Analytics"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP118",
+        "name": "Employee 118",
+        "email": "employee118@company.com",
+        "department": "Human Resources",
+        "position": "HR Assistant",
+        "salary": 68796,
+        "join_date": "2020-05-09",
+        "performance_score": 3.6,
+        "is_active": false,
+        "skills": [
+            "Conflict Resolution",
+            "Recruitment",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP119",
+        "name": "Employee 119",
+        "email": "employee119@company.com",
+        "department": "Human Resources",
+        "position": "Recruiter",
+        "salary": 45557,
+        "join_date": "2019-09-06",
+        "performance_score": 4.5,
+        "is_active": false,
+        "skills": [
+            "Conflict Resolution",
+            "Payroll",
+            "Recruitment"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP120",
+        "name": "Employee 120",
+        "email": "employee120@company.com",
+        "department": "Human Resources",
+        "position": "Recruiter",
+        "salary": 94867,
+        "join_date": "2021-08-17",
+        "performance_score": 2.5,
+        "is_active": false,
+        "skills": [
+            "Conflict Resolution",
+            "Recruitment",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP121",
+        "name": "Employee 121",
+        "email": "employee121@company.com",
+        "department": "Sales",
+        "position": "Account Manager",
+        "salary": 108254,
+        "join_date": "2023-08-14",
+        "performance_score": 4.4,
+        "is_active": true,
+        "skills": [
+            "Negotiation",
+            "CRM",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP122",
+        "name": "Employee 122",
+        "email": "employee122@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 45135,
+        "join_date": "2022-09-15",
+        "performance_score": 4.5,
+        "is_active": true,
+        "skills": [
+            "Docker",
+            "React",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP123",
+        "name": "Employee 123",
+        "email": "employee123@company.com",
+        "department": "Design",
+        "position": "Product Designer",
+        "salary": 119221,
+        "join_date": "2019-08-19",
+        "performance_score": 4.6,
+        "is_active": true,
+        "skills": [
+            "Photoshop",
+            "Prototyping",
+            "Figma"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP124",
+        "name": "Employee 124",
+        "email": "employee124@company.com",
+        "department": "Finance",
+        "position": "Controller",
+        "salary": 90660,
+        "join_date": "2019-09-01",
+        "performance_score": 2.6,
+        "is_active": false,
+        "skills": [
+            "Budgeting",
+            "Forecasting",
+            "Excel"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP125",
+        "name": "Employee 125",
+        "email": "employee125@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 87196,
+        "join_date": "2019-12-30",
+        "performance_score": 4.8,
+        "is_active": true,
+        "skills": [
+            "Python",
+            "Docker",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP126",
+        "name": "Employee 126",
+        "email": "employee126@company.com",
+        "department": "Human Resources",
+        "position": "Recruiter",
+        "salary": 56859,
+        "join_date": "2023-05-29",
+        "performance_score": 4.6,
+        "is_active": true,
+        "skills": [
+            "Conflict Resolution",
+            "Payroll",
+            "Recruitment"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP127",
+        "name": "Employee 127",
+        "email": "employee127@company.com",
+        "department": "Engineering",
+        "position": "QA Tester",
+        "salary": 100057,
+        "join_date": "2020-10-02",
+        "performance_score": 3.1,
+        "is_active": true,
+        "skills": [
+            "MongoDB",
+            "Python",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP128",
+        "name": "Employee 128",
+        "email": "employee128@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 66479,
+        "join_date": "2021-04-29",
+        "performance_score": 4.4,
+        "is_active": false,
+        "skills": [
+            "Docker",
+            "Python",
+            "React"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP129",
+        "name": "Employee 129",
+        "email": "employee129@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 47506,
+        "join_date": "2023-05-08",
+        "performance_score": 3.8,
+        "is_active": false,
+        "skills": [
+            "Figma",
+            "Photoshop",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP130",
+        "name": "Employee 130",
+        "email": "employee130@company.com",
+        "department": "Engineering",
+        "position": "QA Tester",
+        "salary": 100617,
+        "join_date": "2020-03-03",
+        "performance_score": 3.6,
+        "is_active": true,
+        "skills": [
+            "Python",
+            "MongoDB",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP131",
+        "name": "Employee 131",
+        "email": "employee131@company.com",
+        "department": "Finance",
+        "position": "Accountant",
+        "salary": 70470,
+        "join_date": "2023-02-06",
+        "performance_score": 3.9,
+        "is_active": false,
+        "skills": [
+            "Forecasting",
+            "Excel",
+            "Budgeting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP132",
+        "name": "Employee 132",
+        "email": "employee132@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 46821,
+        "join_date": "2022-12-23",
+        "performance_score": 4.3,
+        "is_active": false,
+        "skills": [
+            "Content Creation",
+            "SEO",
+            "Email Marketing"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP133",
+        "name": "Employee 133",
+        "email": "employee133@company.com",
+        "department": "Engineering",
+        "position": "Software Developer",
+        "salary": 78953,
+        "join_date": "2022-01-16",
+        "performance_score": 4.4,
+        "is_active": false,
+        "skills": [
+            "MongoDB",
+            "Python",
+            "React"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP134",
+        "name": "Employee 134",
+        "email": "employee134@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 66187,
+        "join_date": "2019-11-27",
+        "performance_score": 4.9,
+        "is_active": true,
+        "skills": [
+            "Negotiation",
+            "CRM",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP135",
+        "name": "Employee 135",
+        "email": "employee135@company.com",
+        "department": "Human Resources",
+        "position": "Recruiter",
+        "salary": 54039,
+        "join_date": "2019-08-03",
+        "performance_score": 2.8,
+        "is_active": true,
+        "skills": [
+            "Recruitment",
+            "Payroll",
+            "Conflict Resolution"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP136",
+        "name": "Employee 136",
+        "email": "employee136@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 74038,
+        "join_date": "2020-04-18",
+        "performance_score": 2.6,
+        "is_active": false,
+        "skills": [
+            "MongoDB",
+            "Docker",
+            "Python"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP137",
+        "name": "Employee 137",
+        "email": "employee137@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 106165,
+        "join_date": "2019-01-02",
+        "performance_score": 3.6,
+        "is_active": true,
+        "skills": [
+            "Docker",
+            "React",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP138",
+        "name": "Employee 138",
+        "email": "employee138@company.com",
+        "department": "Sales",
+        "position": "Account Manager",
+        "salary": 100748,
+        "join_date": "2021-05-07",
+        "performance_score": 3.8,
+        "is_active": false,
+        "skills": [
+            "CRM",
+            "Negotiation",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP139",
+        "name": "Employee 139",
+        "email": "employee139@company.com",
+        "department": "Engineering",
+        "position": "QA Tester",
+        "salary": 58634,
+        "join_date": "2019-05-14",
+        "performance_score": 3.1,
+        "is_active": false,
+        "skills": [
+            "JavaScript",
+            "Docker",
+            "Python"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP140",
+        "name": "Employee 140",
+        "email": "employee140@company.com",
+        "department": "Sales",
+        "position": "Business Dev Rep",
+        "salary": 92774,
+        "join_date": "2021-11-17",
+        "performance_score": 3.0,
+        "is_active": false,
+        "skills": [
+            "Cold Calling",
+            "CRM",
+            "Negotiation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP141",
+        "name": "Employee 141",
+        "email": "employee141@company.com",
+        "department": "Marketing",
+        "position": "Content Strategist",
+        "salary": 110642,
+        "join_date": "2024-04-05",
+        "performance_score": 3.3,
+        "is_active": false,
+        "skills": [
+            "SEO",
+            "Email Marketing",
+            "Content Creation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP142",
+        "name": "Employee 142",
+        "email": "employee142@company.com",
+        "department": "Human Resources",
+        "position": "HR Assistant",
+        "salary": 93357,
+        "join_date": "2020-04-10",
+        "performance_score": 4.1,
+        "is_active": true,
+        "skills": [
+            "Conflict Resolution",
+            "Payroll",
+            "Recruitment"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP143",
+        "name": "Employee 143",
+        "email": "employee143@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 58756,
+        "join_date": "2021-07-17",
+        "performance_score": 3.9,
+        "is_active": false,
+        "skills": [
+            "Photoshop",
+            "Figma",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP144",
+        "name": "Employee 144",
+        "email": "employee144@company.com",
+        "department": "Sales",
+        "position": "Account Manager",
+        "salary": 88380,
+        "join_date": "2023-07-09",
+        "performance_score": 4.8,
+        "is_active": false,
+        "skills": [
+            "Negotiation",
+            "Cold Calling",
+            "CRM"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP145",
+        "name": "Employee 145",
+        "email": "employee145@company.com",
+        "department": "Design",
+        "position": "Graphic Designer",
+        "salary": 55914,
+        "join_date": "2019-11-24",
+        "performance_score": 3.7,
+        "is_active": false,
+        "skills": [
+            "Prototyping",
+            "Photoshop",
+            "Figma"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP146",
+        "name": "Employee 146",
+        "email": "employee146@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 98890,
+        "join_date": "2021-09-19",
+        "performance_score": 3.0,
+        "is_active": true,
+        "skills": [
+            "Conflict Resolution",
+            "Recruitment",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP147",
+        "name": "Employee 147",
+        "email": "employee147@company.com",
+        "department": "Human Resources",
+        "position": "Recruiter",
+        "salary": 114280,
+        "join_date": "2024-01-09",
+        "performance_score": 3.5,
+        "is_active": true,
+        "skills": [
+            "Conflict Resolution",
+            "Payroll",
+            "Recruitment"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP148",
+        "name": "Employee 148",
+        "email": "employee148@company.com",
+        "department": "Design",
+        "position": "Product Designer",
+        "salary": 115654,
+        "join_date": "2022-12-25",
+        "performance_score": 4.5,
+        "is_active": true,
+        "skills": [
+            "Photoshop",
+            "Figma",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP149",
+        "name": "Employee 149",
+        "email": "employee149@company.com",
+        "department": "Finance",
+        "position": "Accountant",
+        "salary": 95788,
+        "join_date": "2019-03-05",
+        "performance_score": 2.8,
+        "is_active": false,
+        "skills": [
+            "Excel",
+            "Forecasting",
+            "Budgeting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP150",
+        "name": "Employee 150",
+        "email": "employee150@company.com",
+        "department": "Engineering",
+        "position": "Software Developer",
+        "salary": 92359,
+        "join_date": "2024-04-28",
+        "performance_score": 4.9,
+        "is_active": false,
+        "skills": [
+            "Docker",
+            "React",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP151",
+        "name": "Employee 151",
+        "email": "employee151@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 119430,
+        "join_date": "2023-07-16",
+        "performance_score": 4.3,
+        "is_active": false,
+        "skills": [
+            "Prototyping",
+            "Figma",
+            "Photoshop"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP152",
+        "name": "Employee 152",
+        "email": "employee152@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 52645,
+        "join_date": "2021-03-30",
+        "performance_score": 3.2,
+        "is_active": true,
+        "skills": [
+            "Recruitment",
+            "Payroll",
+            "Conflict Resolution"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP153",
+        "name": "Employee 153",
+        "email": "employee153@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 81788,
+        "join_date": "2022-05-20",
+        "performance_score": 3.2,
+        "is_active": false,
+        "skills": [
+            "Conflict Resolution",
+            "Recruitment",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP154",
+        "name": "Employee 154",
+        "email": "employee154@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 104612,
+        "join_date": "2019-01-02",
+        "performance_score": 2.5,
+        "is_active": false,
+        "skills": [
+            "Payroll",
+            "Recruitment",
+            "Conflict Resolution"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP155",
+        "name": "Employee 155",
+        "email": "employee155@company.com",
+        "department": "Design",
+        "position": "Graphic Designer",
+        "salary": 115355,
+        "join_date": "2019-07-18",
+        "performance_score": 4.9,
+        "is_active": false,
+        "skills": [
+            "Figma",
+            "Prototyping",
+            "Photoshop"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP156",
+        "name": "Employee 156",
+        "email": "employee156@company.com",
+        "department": "Finance",
+        "position": "Financial Analyst",
+        "salary": 53942,
+        "join_date": "2019-12-27",
+        "performance_score": 4.0,
+        "is_active": false,
+        "skills": [
+            "Forecasting",
+            "Budgeting",
+            "Excel"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP157",
+        "name": "Employee 157",
+        "email": "employee157@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 76607,
+        "join_date": "2019-12-16",
+        "performance_score": 3.6,
+        "is_active": false,
+        "skills": [
+            "Payroll",
+            "Conflict Resolution",
+            "Recruitment"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP158",
+        "name": "Employee 158",
+        "email": "employee158@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 46107,
+        "join_date": "2021-01-10",
+        "performance_score": 3.2,
+        "is_active": true,
+        "skills": [
+            "Payroll",
+            "Conflict Resolution",
+            "Recruitment"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP159",
+        "name": "Employee 159",
+        "email": "employee159@company.com",
+        "department": "Marketing",
+        "position": "Content Strategist",
+        "salary": 62430,
+        "join_date": "2020-11-04",
+        "performance_score": 4.0,
+        "is_active": false,
+        "skills": [
+            "SEO",
+            "Email Marketing",
+            "Google Analytics"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP160",
+        "name": "Employee 160",
+        "email": "employee160@company.com",
+        "department": "Design",
+        "position": "Graphic Designer",
+        "salary": 83894,
+        "join_date": "2019-03-26",
+        "performance_score": 4.8,
+        "is_active": true,
+        "skills": [
+            "Photoshop",
+            "Figma",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP161",
+        "name": "Employee 161",
+        "email": "employee161@company.com",
+        "department": "Sales",
+        "position": "Account Manager",
+        "salary": 90560,
+        "join_date": "2019-11-09",
+        "performance_score": 3.8,
+        "is_active": true,
+        "skills": [
+            "CRM",
+            "Cold Calling",
+            "Negotiation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP162",
+        "name": "Employee 162",
+        "email": "employee162@company.com",
+        "department": "Human Resources",
+        "position": "Recruiter",
+        "salary": 99347,
+        "join_date": "2022-08-19",
+        "performance_score": 4.3,
+        "is_active": true,
+        "skills": [
+            "Recruitment",
+            "Conflict Resolution",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP163",
+        "name": "Employee 163",
+        "email": "employee163@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 82262,
+        "join_date": "2024-02-27",
+        "performance_score": 4.9,
+        "is_active": true,
+        "skills": [
+            "Conflict Resolution",
+            "Recruitment",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP164",
+        "name": "Employee 164",
+        "email": "employee164@company.com",
+        "department": "Design",
+        "position": "Graphic Designer",
+        "salary": 99879,
+        "join_date": "2020-12-27",
+        "performance_score": 4.2,
+        "is_active": true,
+        "skills": [
+            "Figma",
+            "Prototyping",
+            "Photoshop"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP165",
+        "name": "Employee 165",
+        "email": "employee165@company.com",
+        "department": "Sales",
+        "position": "Account Manager",
+        "salary": 53272,
+        "join_date": "2023-05-12",
+        "performance_score": 4.2,
+        "is_active": false,
+        "skills": [
+            "CRM",
+            "Negotiation",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP166",
+        "name": "Employee 166",
+        "email": "employee166@company.com",
+        "department": "Engineering",
+        "position": "Software Developer",
+        "salary": 82581,
+        "join_date": "2023-06-07",
+        "performance_score": 3.5,
+        "is_active": true,
+        "skills": [
+            "React",
+            "Python",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP167",
+        "name": "Employee 167",
+        "email": "employee167@company.com",
+        "department": "Sales",
+        "position": "Account Manager",
+        "salary": 109173,
+        "join_date": "2022-05-09",
+        "performance_score": 2.5,
+        "is_active": false,
+        "skills": [
+            "CRM",
+            "Negotiation",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP168",
+        "name": "Employee 168",
+        "email": "employee168@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 59173,
+        "join_date": "2022-05-29",
+        "performance_score": 4.8,
+        "is_active": false,
+        "skills": [
+            "SEO",
+            "Content Creation",
+            "Google Analytics"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP169",
+        "name": "Employee 169",
+        "email": "employee169@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 119711,
+        "join_date": "2020-11-14",
+        "performance_score": 4.9,
+        "is_active": true,
+        "skills": [
+            "Content Creation",
+            "Google Analytics",
+            "SEO"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP170",
+        "name": "Employee 170",
+        "email": "employee170@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 107425,
+        "join_date": "2024-04-14",
+        "performance_score": 3.5,
+        "is_active": false,
+        "skills": [
+            "Content Creation",
+            "SEO",
+            "Email Marketing"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP171",
+        "name": "Employee 171",
+        "email": "employee171@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 72542,
+        "join_date": "2024-02-03",
+        "performance_score": 4.4,
+        "is_active": false,
+        "skills": [
+            "Negotiation",
+            "Cold Calling",
+            "CRM"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP172",
+        "name": "Employee 172",
+        "email": "employee172@company.com",
+        "department": "Sales",
+        "position": "Account Manager",
+        "salary": 115100,
+        "join_date": "2020-06-08",
+        "performance_score": 3.8,
+        "is_active": true,
+        "skills": [
+            "Negotiation",
+            "CRM",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP173",
+        "name": "Employee 173",
+        "email": "employee173@company.com",
+        "department": "Design",
+        "position": "Product Designer",
+        "salary": 81370,
+        "join_date": "2020-06-09",
+        "performance_score": 3.6,
+        "is_active": true,
+        "skills": [
+            "Photoshop",
+            "Prototyping",
+            "Figma"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP174",
+        "name": "Employee 174",
+        "email": "employee174@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 112460,
+        "join_date": "2019-12-30",
+        "performance_score": 4.0,
+        "is_active": false,
+        "skills": [
+            "SEO",
+            "Email Marketing",
+            "Content Creation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP175",
+        "name": "Employee 175",
+        "email": "employee175@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 117064,
+        "join_date": "2020-02-19",
+        "performance_score": 4.4,
+        "is_active": true,
+        "skills": [
+            "Negotiation",
+            "Cold Calling",
+            "CRM"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP176",
+        "name": "Employee 176",
+        "email": "employee176@company.com",
+        "department": "Sales",
+        "position": "Business Dev Rep",
+        "salary": 103931,
+        "join_date": "2019-08-02",
+        "performance_score": 3.6,
+        "is_active": true,
+        "skills": [
+            "CRM",
+            "Negotiation",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP177",
+        "name": "Employee 177",
+        "email": "employee177@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 103594,
+        "join_date": "2021-06-10",
+        "performance_score": 4.1,
+        "is_active": false,
+        "skills": [
+            "Cold Calling",
+            "CRM",
+            "Negotiation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP178",
+        "name": "Employee 178",
+        "email": "employee178@company.com",
+        "department": "Sales",
+        "position": "Business Dev Rep",
+        "salary": 54881,
+        "join_date": "2020-01-18",
+        "performance_score": 3.9,
+        "is_active": true,
+        "skills": [
+            "Negotiation",
+            "Cold Calling",
+            "CRM"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP179",
+        "name": "Employee 179",
+        "email": "employee179@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 94521,
+        "join_date": "2023-07-22",
+        "performance_score": 3.9,
+        "is_active": false,
+        "skills": [
+            "JavaScript",
+            "MongoDB",
+            "Docker"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP180",
+        "name": "Employee 180",
+        "email": "employee180@company.com",
+        "department": "Marketing",
+        "position": "Content Strategist",
+        "salary": 99963,
+        "join_date": "2023-11-23",
+        "performance_score": 3.0,
+        "is_active": false,
+        "skills": [
+            "Email Marketing",
+            "Content Creation",
+            "SEO"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP181",
+        "name": "Employee 181",
+        "email": "employee181@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 119101,
+        "join_date": "2020-09-08",
+        "performance_score": 3.9,
+        "is_active": true,
+        "skills": [
+            "CRM",
+            "Cold Calling",
+            "Negotiation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP182",
+        "name": "Employee 182",
+        "email": "employee182@company.com",
+        "department": "Sales",
+        "position": "Business Dev Rep",
+        "salary": 81154,
+        "join_date": "2019-12-21",
+        "performance_score": 2.9,
+        "is_active": false,
+        "skills": [
+            "Cold Calling",
+            "CRM",
+            "Negotiation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP183",
+        "name": "Employee 183",
+        "email": "employee183@company.com",
+        "department": "Finance",
+        "position": "Accountant",
+        "salary": 56395,
+        "join_date": "2019-07-14",
+        "performance_score": 5.0,
+        "is_active": true,
+        "skills": [
+            "Excel",
+            "Budgeting",
+            "Forecasting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP184",
+        "name": "Employee 184",
+        "email": "employee184@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 48624,
+        "join_date": "2022-01-10",
+        "performance_score": 3.4,
+        "is_active": true,
+        "skills": [
+            "Negotiation",
+            "CRM",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP185",
+        "name": "Employee 185",
+        "email": "employee185@company.com",
+        "department": "Engineering",
+        "position": "Software Developer",
+        "salary": 47187,
+        "join_date": "2020-10-25",
+        "performance_score": 2.5,
+        "is_active": false,
+        "skills": [
+            "MongoDB",
+            "JavaScript",
+            "Python"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP186",
+        "name": "Employee 186",
+        "email": "employee186@company.com",
+        "department": "Design",
+        "position": "Graphic Designer",
+        "salary": 111984,
+        "join_date": "2023-12-04",
+        "performance_score": 2.9,
+        "is_active": true,
+        "skills": [
+            "Prototyping",
+            "Figma",
+            "Photoshop"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP187",
+        "name": "Employee 187",
+        "email": "employee187@company.com",
+        "department": "Engineering",
+        "position": "QA Tester",
+        "salary": 106970,
+        "join_date": "2021-11-14",
+        "performance_score": 3.2,
+        "is_active": true,
+        "skills": [
+            "JavaScript",
+            "React",
+            "Docker"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP188",
+        "name": "Employee 188",
+        "email": "employee188@company.com",
+        "department": "Finance",
+        "position": "Financial Analyst",
+        "salary": 54091,
+        "join_date": "2020-07-14",
+        "performance_score": 3.2,
+        "is_active": false,
+        "skills": [
+            "Excel",
+            "Forecasting",
+            "Budgeting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP189",
+        "name": "Employee 189",
+        "email": "employee189@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 97562,
+        "join_date": "2022-12-23",
+        "performance_score": 4.6,
+        "is_active": true,
+        "skills": [
+            "Content Creation",
+            "Email Marketing",
+            "Google Analytics"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP190",
+        "name": "Employee 190",
+        "email": "employee190@company.com",
+        "department": "Human Resources",
+        "position": "HR Assistant",
+        "salary": 108415,
+        "join_date": "2019-01-12",
+        "performance_score": 3.1,
+        "is_active": false,
+        "skills": [
+            "Conflict Resolution",
+            "Recruitment",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP191",
+        "name": "Employee 191",
+        "email": "employee191@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 56100,
+        "join_date": "2019-10-25",
+        "performance_score": 3.2,
+        "is_active": false,
+        "skills": [
+            "Email Marketing",
+            "SEO",
+            "Content Creation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP192",
+        "name": "Employee 192",
+        "email": "employee192@company.com",
+        "department": "Sales",
+        "position": "Sales Executive",
+        "salary": 102712,
+        "join_date": "2019-04-24",
+        "performance_score": 4.2,
+        "is_active": true,
+        "skills": [
+            "Cold Calling",
+            "Negotiation",
+            "CRM"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP193",
+        "name": "Employee 193",
+        "email": "employee193@company.com",
+        "department": "Design",
+        "position": "Graphic Designer",
+        "salary": 114444,
+        "join_date": "2021-06-21",
+        "performance_score": 3.0,
+        "is_active": false,
+        "skills": [
+            "Photoshop",
+            "Figma",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP194",
+        "name": "Employee 194",
+        "email": "employee194@company.com",
+        "department": "Finance",
+        "position": "Financial Analyst",
+        "salary": 69961,
+        "join_date": "2019-12-29",
+        "performance_score": 3.2,
+        "is_active": true,
+        "skills": [
+            "Forecasting",
+            "Budgeting",
+            "Excel"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP195",
+        "name": "Employee 195",
+        "email": "employee195@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 71824,
+        "join_date": "2023-02-06",
+        "performance_score": 4.4,
+        "is_active": false,
+        "skills": [
+            "Email Marketing",
+            "Content Creation",
+            "SEO"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP196",
+        "name": "Employee 196",
+        "email": "employee196@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 49534,
+        "join_date": "2019-03-22",
+        "performance_score": 2.8,
+        "is_active": false,
+        "skills": [
+            "SEO",
+            "Email Marketing",
+            "Google Analytics"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP197",
+        "name": "Employee 197",
+        "email": "employee197@company.com",
+        "department": "Finance",
+        "position": "Financial Analyst",
+        "salary": 58007,
+        "join_date": "2019-03-03",
+        "performance_score": 3.0,
+        "is_active": false,
+        "skills": [
+            "Excel",
+            "Budgeting",
+            "Forecasting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP198",
+        "name": "Employee 198",
+        "email": "employee198@company.com",
+        "department": "Finance",
+        "position": "Controller",
+        "salary": 110593,
+        "join_date": "2024-04-06",
+        "performance_score": 3.7,
+        "is_active": false,
+        "skills": [
+            "Forecasting",
+            "Excel",
+            "Budgeting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP199",
+        "name": "Employee 199",
+        "email": "employee199@company.com",
+        "department": "Engineering",
+        "position": "Software Developer",
+        "salary": 72053,
+        "join_date": "2021-02-12",
+        "performance_score": 2.8,
+        "is_active": false,
+        "skills": [
+            "Docker",
+            "React",
+            "MongoDB"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP200",
+        "name": "Employee 200",
+        "email": "employee200@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 87349,
+        "join_date": "2020-08-17",
+        "performance_score": 2.7,
+        "is_active": false,
+        "skills": [
+            "Docker",
+            "React",
+            "JavaScript"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP201",
+        "name": "Employee 201",
+        "email": "employee201@company.com",
+        "department": "Design",
+        "position": "UI/UX Designer",
+        "salary": 112851,
+        "join_date": "2022-12-30",
+        "performance_score": 2.8,
+        "is_active": true,
+        "skills": [
+            "Photoshop",
+            "Figma",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP202",
+        "name": "Employee 202",
+        "email": "employee202@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 62675,
+        "join_date": "2024-01-18",
+        "performance_score": 4.2,
+        "is_active": false,
+        "skills": [
+            "SEO",
+            "Email Marketing",
+            "Content Creation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP203",
+        "name": "Employee 203",
+        "email": "employee203@company.com",
+        "department": "Engineering",
+        "position": "Software Developer",
+        "salary": 49809,
+        "join_date": "2019-06-02",
+        "performance_score": 3.9,
+        "is_active": true,
+        "skills": [
+            "Python",
+            "JavaScript",
+            "Docker"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP204",
+        "name": "Employee 204",
+        "email": "employee204@company.com",
+        "department": "Design",
+        "position": "Product Designer",
+        "salary": 90659,
+        "join_date": "2023-03-05",
+        "performance_score": 2.8,
+        "is_active": false,
+        "skills": [
+            "Figma",
+            "Photoshop",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP205",
+        "name": "Employee 205",
+        "email": "employee205@company.com",
+        "department": "Design",
+        "position": "Product Designer",
+        "salary": 107391,
+        "join_date": "2020-10-06",
+        "performance_score": 4.7,
+        "is_active": false,
+        "skills": [
+            "Photoshop",
+            "Figma",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP206",
+        "name": "Employee 206",
+        "email": "employee206@company.com",
+        "department": "Engineering",
+        "position": "DevOps Engineer",
+        "salary": 110563,
+        "join_date": "2023-12-18",
+        "performance_score": 4.9,
+        "is_active": false,
+        "skills": [
+            "Python",
+            "Docker",
+            "React"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP207",
+        "name": "Employee 207",
+        "email": "employee207@company.com",
+        "department": "Human Resources",
+        "position": "HR Assistant",
+        "salary": 65770,
+        "join_date": "2021-08-26",
+        "performance_score": 3.6,
+        "is_active": true,
+        "skills": [
+            "Conflict Resolution",
+            "Recruitment",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP208",
+        "name": "Employee 208",
+        "email": "employee208@company.com",
+        "department": "Sales",
+        "position": "Business Dev Rep",
+        "salary": 64360,
+        "join_date": "2024-02-25",
+        "performance_score": 4.0,
+        "is_active": false,
+        "skills": [
+            "Negotiation",
+            "CRM",
+            "Cold Calling"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP209",
+        "name": "Employee 209",
+        "email": "employee209@company.com",
+        "department": "Finance",
+        "position": "Accountant",
+        "salary": 56499,
+        "join_date": "2021-05-22",
+        "performance_score": 3.0,
+        "is_active": false,
+        "skills": [
+            "Excel",
+            "Forecasting",
+            "Budgeting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP210",
+        "name": "Employee 210",
+        "email": "employee210@company.com",
+        "department": "Design",
+        "position": "Product Designer",
+        "salary": 108708,
+        "join_date": "2022-03-13",
+        "performance_score": 2.7,
+        "is_active": true,
+        "skills": [
+            "Photoshop",
+            "Figma",
+            "Prototyping"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP211",
+        "name": "Employee 211",
+        "email": "employee211@company.com",
+        "department": "Human Resources",
+        "position": "HR Manager",
+        "salary": 84312,
+        "join_date": "2021-01-04",
+        "performance_score": 3.0,
+        "is_active": false,
+        "skills": [
+            "Conflict Resolution",
+            "Recruitment",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP212",
+        "name": "Employee 212",
+        "email": "employee212@company.com",
+        "department": "Finance",
+        "position": "Financial Analyst",
+        "salary": 77373,
+        "join_date": "2022-05-31",
+        "performance_score": 2.7,
+        "is_active": false,
+        "skills": [
+            "Excel",
+            "Budgeting",
+            "Forecasting"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP213",
+        "name": "Employee 213",
+        "email": "employee213@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 91837,
+        "join_date": "2020-11-07",
+        "performance_score": 4.7,
+        "is_active": false,
+        "skills": [
+            "Google Analytics",
+            "Email Marketing",
+            "Content Creation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP214",
+        "name": "Employee 214",
+        "email": "employee214@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 65913,
+        "join_date": "2024-01-16",
+        "performance_score": 3.1,
+        "is_active": false,
+        "skills": [
+            "Content Creation",
+            "Email Marketing",
+            "Google Analytics"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP215",
+        "name": "Employee 215",
+        "email": "employee215@company.com",
+        "department": "Design",
+        "position": "Product Designer",
+        "salary": 56524,
+        "join_date": "2020-06-18",
+        "performance_score": 3.6,
+        "is_active": true,
+        "skills": [
+            "Prototyping",
+            "Photoshop",
+            "Figma"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP216",
+        "name": "Employee 216",
+        "email": "employee216@company.com",
+        "department": "Engineering",
+        "position": "QA Tester",
+        "salary": 103845,
+        "join_date": "2024-03-27",
+        "performance_score": 3.1,
+        "is_active": true,
+        "skills": [
+            "JavaScript",
+            "MongoDB",
+            "React"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP217",
+        "name": "Employee 217",
+        "email": "employee217@company.com",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 119083,
+        "join_date": "2020-01-13",
+        "performance_score": 4.4,
+        "is_active": true,
+        "skills": [
+            "Google Analytics",
+            "SEO",
+            "Content Creation"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP218",
+        "name": "Employee 218",
+        "email": "employee218@company.com",
+        "department": "Marketing",
+        "position": "SEO Analyst",
+        "salary": 111063,
+        "join_date": "2022-02-02",
+        "performance_score": 2.6,
+        "is_active": false,
+        "skills": [
+            "SEO",
+            "Content Creation",
+            "Google Analytics"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP219",
+        "name": "Employee 219",
+        "email": "employee219@company.com",
+        "department": "Engineering",
+        "position": "QA Tester",
+        "salary": 116474,
+        "join_date": "2019-10-03",
+        "performance_score": 3.2,
+        "is_active": false,
+        "skills": [
+            "React",
+            "Python",
+            "MongoDB"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    },
+    {
+        "employee_id": "EMP220",
+        "name": "Employee 220",
+        "email": "employee220@company.com",
+        "department": "Human Resources",
+        "position": "Recruiter",
+        "salary": 114950,
+        "join_date": "2022-11-22",
+        "performance_score": 3.2,
+        "is_active": true,
+        "skills": [
+            "Conflict Resolution",
+            "Recruitment",
+            "Payroll"
+        ],
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z"
+    }
+]
