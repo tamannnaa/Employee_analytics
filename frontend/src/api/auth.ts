@@ -1,0 +1,16 @@
+import { api } from "./axios";
+import type { loginFormData,registerFormData } from "../types/auth";
+
+export const login=async(data:loginFormData)=>{
+    const res=await api.post("/auth/login",data);
+    return res.data;
+
+}
+export const register=async(data:registerFormData)=>{
+    const res=await api.post("/auth/register",data);
+    return res.data;
+}
+export const getuser=async()=>{
+    const res=await api.get("/auth/me");
+    return res.data;
+}

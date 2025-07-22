@@ -1,9 +1,26 @@
 from fastapi import FastAPI, HTTPException
 from . import crud, excel_generator, models
+from .routes import authroutes
 from fastapi.responses import FileResponse,JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
 
 app = FastAPI()
+
+origins = [
+    "http://localhost:5173",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins, 
+    allow_credentials=True,
+    allow_methods=["*"], 
+    allow_headers=["*"], 
+)
+
+# Auth routes
+app.include_router(authroutes.router)
 
 # Health Check
 @app.get("/")

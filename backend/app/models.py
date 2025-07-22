@@ -54,3 +54,16 @@ class SalaryStats(BaseModel):
 
 class PerformanceStats(BaseModel):
     top_performers: List[str]
+
+class Logindetails(BaseModel):
+    email:str
+    password:str
+
+class Registerdetails(BaseModel):
+    name:str
+    email:str
+    password:str
+
+class Updateprofiledetails(BaseModel):
+    name:str
+    email:str
