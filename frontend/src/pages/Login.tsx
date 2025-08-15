@@ -1,47 +1,32 @@
-import { useForm } from "react-hook-form";
-import type { loginFormData } from '../types/auth';
-import { useNavigate } from 'react-router-dom';
-import {  useAuth } from '../context/Authcontext';
-import { login } from '../api/auth';
+import React from "react";
 
-const Login = () => {
-  const{register,handleSubmit}=useForm<loginFormData>();
-
-  const context=useAuth();
-  if(!context){
-    throw new Error("Authcontext not found");
-  }
-  const{setUser}=context;
-  
-  const navigate=useNavigate();
-
-  const submit=async(data:loginFormData)=>{
-    try{
-      const res=await login(data);
-      localStorage.setItem("token",res.access_token);
-      setUser(res.user);
-      navigate("/");
-    }
-    catch(e){
-      alert("Invalid credentials: "+e);
-    }
-  }
-
-
-  return (
-    <div>
-
-      <form onSubmit={handleSubmit(submit)}>
-        <h2>LOGIN</h2>
-        <input {...register("email")} placeholder='Enter email' />
-        <input {...register("password")} type='password' placeholder='Enter password' />
-        <button type='submit'>Login</button>
-      </form>
-
-
-
-    </div>
-  )
+interface Props {
+  email: string;
+  password: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onSubmit: (e: React.FormEvent) => void;
 }
 
-export default Login
+const Login: React.FC<Props> = ({ email, password, onChange, onSubmit }) => (
+  <div className="form-box login">
+    <form onSubmit={onSubmit}>
+      <h1>Login</h1>
+      <div className="input-box">
+        <input type="email" placeholder="Email" name="email" required value={email} onChange={onChange} />
+        <i className="bx bxs-user"></i>
+      </div>
+      <div className="input-box">
+        <input type="password" placeholder="Password" name="password" required value={password} onChange={onChange} />
+        <i className="bx bxs-lock-alt"></i>
+      </div>
+      <div className="forgot-link">
+        <a href="#">Forgot Password?</a>
+      </div>
+      <button type="submit" className="btn">Login</button>
+      <p>or login with social platforms</p>
+      <div className="social-icons">{/* Social links */}</div>
+    </form>
+  </div>
+);
+
+export default Login;

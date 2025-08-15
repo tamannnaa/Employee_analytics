@@ -23,9 +23,9 @@ def createtoken(data:dict,expiredelta:timedelta=None):
     encoded.update({"exp":expire})
     return jwt.encode(encoded,secretkey,algorithm=algo)
 
-def decodetoken(token:str):
+def decodetoken(token: str):
     try:
-        decodedtoken=jwt.decode(token,secretkey,algorithms=[algo])
-        return decodedtoken.get("email")
+        decodedtoken = jwt.decode(token, secretkey, algorithms=[algo])
+        return decodedtoken  # Return the dict, not just the "sub"
     except JWTError:
         return None

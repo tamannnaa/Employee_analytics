@@ -1,46 +1,34 @@
-import { useForm } from 'react-hook-form'
-import type { registerFormData } from '../types/auth'
-import { useNavigate } from 'react-router-dom';
-import {  useAuth } from '../context/Authcontext';
-import { register as registeruser } from '../api/auth';
+import React from "react";
 
-const Register = () => {
-  const {register,handleSubmit}=useForm<registerFormData>();
-  
-  const context=useAuth();
-  if(!context){
-    throw new Error("Authcontext not found");
-  }
-  const{setUser}=context;
-  
-  const navigate=useNavigate();
-
-  const submit=async(data:registerFormData)=>{
-    try{
-      const res=await registeruser(data);
-      localStorage.setItem("token",res.access_token);
-      setUser(res.user);
-      navigate("/");
-    }
-    catch(e){
-      alert("Registration failed: "+e);
-    }
-  }
-
-
-  return (
-    <div>
-
-      <form onSubmit={handleSubmit(submit)}>
-            <h2>REGISTER</h2>
-            <input {...register("name")} placeholder='Enter name' />
-            <input {...register("email")}  placeholder='Enter email' />
-            <input {...register("password")} type="password" placeholder='Enter password' />
-            <button type='submit'>Register</button>
-        </form>
-
-    </div>
-  )
+interface Props {
+  name: string;
+  email: string;
+  password: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onSubmit: (e: React.FormEvent) => void;
 }
 
-export default Register
+const Register: React.FC<Props> = ({ name, email, password, onChange, onSubmit }) => (
+  <div className="form-box register">
+    <form onSubmit={onSubmit}>
+      <h1>Registration</h1>
+      <div className="input-box">
+        <input type="text" placeholder="Name" name="name" required value={name} onChange={onChange} />
+        <i className="bx bxs-user"></i>
+      </div>
+      <div className="input-box">
+        <input type="email" placeholder="Email" name="email" required value={email} onChange={onChange} />
+        <i className="bx bxs-envelope"></i>
+      </div>
+      <div className="input-box">
+        <input type="password" placeholder="Password" name="password" required value={password} onChange={onChange} />
+        <i className="bx bxs-lock-alt"></i>
+      </div>
+      <button type="submit" className="btn">Register</button>
+      <p>or register with social platforms</p>
+      <div className="social-icons">{/* Social links */}</div>
+    </form>
+  </div>
+);
+
+export default Register;
