@@ -12,14 +12,21 @@ const Statistics = () => {
 
   return (
     <div style={{ padding: "20px" }}>
+      
       <h2>Employee Statistics</h2>
       <ul>
         <li>Total Employees: {stats.total_employees}</li>
         <li>Active Employees: {stats.active_employees}</li>
         <li>Inactive Employees: {stats.inactive_employees}</li>
         <li>Average Salary: ${stats.average_salary}</li>
-      </ul>
+      </ul><br />
+      <div>
+        <div>
+                <a className="text-blue-600" href="/dashboard">Go to Home</a>
+              </div>
+      </div>
     </div>
+    
   );
 };
 

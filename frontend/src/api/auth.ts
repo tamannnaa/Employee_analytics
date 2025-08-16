@@ -1,5 +1,5 @@
 import { api } from "./axios";
-import type { loginFormData,registerFormData } from "../types/auth";
+import type { loginFormData,registerFormData,ProfileData } from "../types/auth";
 
 export const login=async(data:loginFormData)=>{
     const res=await api.post("/auth/login",data);
@@ -23,13 +23,11 @@ export const getuser = async () => {
   return res.data;
 };
 
-export const updateProfile = async (name: string, email: string) => {
+export const updateProfile = async (profileData: ProfileData) => {
   const token = localStorage.getItem("token");
-  const res = await api.put(
-    "/auth/profile",
-    { name, email },
-    { headers: { Authorization: `Bearer ${token}` } }
-  );
+  const res = await api.put("/auth/profile", profileData, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
   return res.data;
 };
 

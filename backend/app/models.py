@@ -3,7 +3,7 @@ from typing import List, Optional
 from datetime import datetime
 
 class Employee(BaseModel):
-    employee_id: str
+    employee_id: Optional[str]= None
     name: str
     email: str
     department: str
@@ -41,9 +41,11 @@ class UpdateEmployee(BaseModel):
     department: Optional[str]
     position: Optional[str]
     salary: Optional[float]
+    join_date: Optional[str]
     performance_score: Optional[float]
     is_active: Optional[bool]
     skills: Optional[List[str]]
+
 
 class SalaryStats(BaseModel):
     department: str
@@ -64,6 +66,3 @@ class Registerdetails(BaseModel):
     email:str
     password:str
 
-class Updateprofiledetails(BaseModel):
-    name:str
-    email:str

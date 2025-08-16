@@ -1,9 +1,10 @@
 from fastapi import APIRouter,HTTPException,Depends,Header
-from app.models import Logindetails,Registerdetails,Updateprofiledetails
+from app.models import Logindetails,Registerdetails,UpdateEmployee
 from app.utils.auth import hashpass, verifypass,createtoken,decodetoken
 from app.database import get_database
 from fastapi.security import HTTPAuthorizationCredentials,HTTPBearer
 security=HTTPBearer()
+from bson import ObjectId
 
 router=APIRouter(prefix="/auth",tags=["Auth"])
 
@@ -40,38 +41,48 @@ def logout():
     return {"message":"logged out successfully","token":"trial token"}
 
 @router.get("/me")
-def getProfile(credentials:HTTPAuthorizationCredentials=Depends(security)):
-    token=credentials.credentials
+def getProfile(credentials: HTTPAuthorizationCredentials = Depends(security)):
+    token = credentials.credentials
     decoded_payload = decodetoken(token)
     email = decoded_payload.get("sub") if decoded_payload else None
     
     if not email:
-        raise HTTPException(status_code=401,detail="Invalid token")
-    user=empcollection.find_one({"email":email})
-    if not user:
-        raise HTTPException(status_code=404,detail="User Not Found")
+        raise HTTPException(status_code=401, detail="Invalid token")
     
+    user = empcollection.find_one({"email": email})
+    if not user:
+        raise HTTPException(status_code=404, detail="User Not Found")
+    
+    # Convert ObjectId to str and remove sensitive fields
+    user["id"] = str(user.pop("_id", ""))
+    user.pop("hashed_password", None)
+
     return {
-        "name":user["name"],
-        "email":user["email"],
-        "message":"Profile retrieved"
+        **user,
+        "message": "Profile retrieved"
     }
 
+
 @router.put("/profile")
-def updateProfile(data:Updateprofiledetails,Authorization:str=Header(...)):
+def updateProfile(data: UpdateEmployee, Authorization: str = Header(...)):
     token = Authorization.replace("Bearer ", "").strip()
     decoded_payload = decodetoken(token)
     email = decoded_payload.get("sub") if decoded_payload else None
 
     if not email:
         raise HTTPException(status_code=401, detail="Invalid token")
+    
     user = empcollection.find_one({"email": email})
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
 
-    result=empcollection.update_one({"email":email},{"$set":{"name":data.name,"email":data.email}})
-    if result.modified_count==0:
-        raise HTTPException(status_code=400, detail="No changes made or user not found")
+    # Update all fields
+    result = empcollection.update_one({"email": email}, {"$set": data.dict()})
 
-    return {"message":"Profile updated","newdata":data}
+    if result.modified_count == 0:
+        raise HTTPException(status_code=400, detail="No changes made")
+    
+    return {"message": "Profile updated", "newdata": data}
 
 @router.post("/reset-password")
 def resetPassword(email:str):

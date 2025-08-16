@@ -24,21 +24,40 @@ const AuthForm: React.FC = () => {
   };
 
   const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
-    try {
-      const res = await login(loginData);
-      localStorage.setItem("token", res.token);
-      auth?.setUser(res); // optionally set user context
-      setMessage("Login successful!");
+  e.preventDefault();
+  console.log("Login button clicked");
+  console.log("Login payload:", loginData);
 
-      navigate("/dashboard"); 
-    } catch (err) {
-      setMessage(err.response?.data?.detail || "Login failed");
+  try {
+    const res = await login(loginData);
+    console.log("Login response:", res);
+    localStorage.setItem("token", res.token);
+    auth?.setUser(res);
+    setMessage("Login successful!");
+    console.log("Login successful, navigating to dashboard");
+
+    navigate("/dashboard");
+  } catch (err: any) {
+    console.error("Login error object:", err);
+
+    // Detailed message fallback
+    if (err.response) {
+      console.error("Backend response error:", err.response.data);
+      setMessage(err.response.data.detail || "Login failed");
+    } else if (err.request) {
+      console.error("No response received:", err.request);
+      setMessage("No response from server. Is backend running?");
+    } else {
+      console.error("Error setting up request:", err.message);
+      setMessage(err.message || "Login failed");
     }
-  };
+  }
+};
+
 
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
+    console.log("register button clicked")
     try {
       const res = await register(registerData);
       localStorage.setItem("token", res.token);
@@ -69,14 +88,14 @@ const AuthForm: React.FC = () => {
         <div className="toggle-panel toggle-left">
           <h1>Hello, Welcome!</h1>
           <p>Don't have an account?</p>
-          <button className="btn register-btn" onClick={() => setIsRegisterActive(true)}>
+          <button type="button" className="btn register-btn" onClick={() => setIsRegisterActive(true)}>
             Register
           </button>
         </div>
         <div className="toggle-panel toggle-right">
           <h1>Welcome Back!</h1>
           <p>Already have an account?</p>
-          <button className="btn login-btn" onClick={() => setIsRegisterActive(false)}>
+          <button type="button" className="btn login-btn" onClick={() => setIsRegisterActive(false)}>
             Login
           </button>
         </div>

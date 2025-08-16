@@ -23,7 +23,7 @@ const BulkImport = () => {
           <div className="w-full max-w-md">
             <h2 className="text-2xl font-bold text-blue-700 mb-6 text-center">
               Bulk Import Employees
-            </h2>
+            </h2><br />
 
             <div className="flex flex-col gap-5">
               {/* File Input */}

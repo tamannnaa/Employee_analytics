@@ -1,12 +1,13 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/Authcontext';
-import Dashboard from './pages/Dashboard';
 import AuthForm from './pages/AuthForm';
 import Statistics from './pages/Statistics';
-import EmployeeList from './pages/EmployeesList';
 import BulkImport from './pages/BulkImport';
 import ExportEmployees from './pages/ExportEmployees';
 import Profile from './pages/Profile';
+import Employees from './pages/Employees';
+import UpdateEmployee from './pages/UpdateEmployee';
+import Dashboard2 from './pages/Dashboard2';
 
 const ProtectedRoute = ({ children }: { children: React.ReactElement }) => {
   const context = useAuth();
@@ -33,10 +34,19 @@ function App() {
             path="/dashboard"
             element={
               <ProtectedRoute>
-                <Dashboard />
+                <Dashboard2 />
               </ProtectedRoute>
             }
           />
+          <Route
+          path="/user/:employeeId"
+          element={
+          <ProtectedRoute>
+            <UpdateEmployee />
+            </ProtectedRoute>
+          }
+          />
+
           <Route
             path="/employees/statistics"
             element={
@@ -46,10 +56,10 @@ function App() {
             }
           />
           <Route
-            path="/employees/list"
+            path="/employees"
             element={
               <ProtectedRoute>
-                <EmployeeList />
+                <Employees />
               </ProtectedRoute>
             }
           />

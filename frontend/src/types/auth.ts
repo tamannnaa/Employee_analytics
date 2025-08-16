@@ -26,3 +26,15 @@ export interface AuthContextType {
   loading: boolean;
   setUser: React.Dispatch<User|null>;
 }
+export interface ProfileData {
+  employee_id?: string;
+  name: string;
+  email: string;
+  department?: string;
+  position?: string;
+  salary?: number;
+  join_date?: string;
+  performance_score?: number;
+  is_active?: boolean;
+  skills?: string[];
+}

@@ -145,12 +145,12 @@ def bulk_delete(ids: List[str] = Query(...)):
     res = empcollection.delete_many({"employee_id": {"$in": ids}})
     return {"deleted": res.deleted_count}
 
-@router.get("/{employee_id}")
-def get_employee(employee_id: str):
-    employee = crud.get_employee_by_id(employee_id)
-    if employee:
-        return employee
-    raise HTTPException(status_code=404, detail="Employee not found")
+def get_employee_by_id(employee_id: str):
+    return empcollection.find_one(
+        {"employee_id": {"$regex": f"^{employee_id}$", "$options": "i"}}, 
+        {"_id": 0}
+    )
+
 
 @router.put("/{employee_id}")
 def update_employee(employee_id: str, updates: models.UpdateEmployee):
