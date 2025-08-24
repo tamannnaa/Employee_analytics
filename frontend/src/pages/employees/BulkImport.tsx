@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { bulkImport } from "../api/employee";
+import { bulkImport } from "../../api/employee";
 
 const BulkImport = () => {
   const [file, setFile] = useState<File | null>(null);

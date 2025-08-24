@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getStatistics } from "../api/employee";
+import { getStatistics } from "../../api/employee";
 
 const Statistics = () => {
   const [stats, setStats] = useState<any>(null);
