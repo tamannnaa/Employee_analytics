@@ -107,31 +107,31 @@ function App() {
             } 
           />
           <Route 
-            path="/analytics/salary" 
+            path="/analytics/salary-distribution" 
             element={
               <SalaryDistribution />
             } 
           />
           <Route 
-            path="/analytics/departments" 
+            path="/analytics/department-performance" 
             element={
               <DepartmentPerformance />
             } 
           />
           <Route 
-            path="/analytics/hiring" 
+            path="/analytics/hiring-trends" 
             element={
               <HiringTrends />
             } 
           />
           <Route 
-            path="/analytics/retention" 
+            path="/analytics/retention-rate" 
             element={
               <RetentionRate />
             } 
           />
           <Route 
-            path="/analytics/performance" 
+            path="/analytics/performance-trends" 
             element={
               <PerformanceTrends />
             } 

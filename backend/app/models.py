@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from typing import List, Optional
 from datetime import datetime
+from typing import Optional, List, Dict, Any
 
 class Employee(BaseModel):
     employee_id: Optional[str]= None
@@ -66,3 +67,13 @@ class Registerdetails(BaseModel):
     email:str
     password:str
 
+# Pydantic models for request/response
+class DateRangeFilter(BaseModel):
+    start_date: Optional[str] = None
+    end_date: Optional[str] = None
+    department: Optional[str] = None
+
+class CustomQueryRequest(BaseModel):
+    filters: Dict[str, Any]
+    group_by: Optional[str] = None
+    aggregation: Optional[str] = None
