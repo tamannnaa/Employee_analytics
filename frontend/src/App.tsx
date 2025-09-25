@@ -8,7 +8,7 @@ import ExportEmployees from './pages/employees/ExportEmployees';
 import Profile from './pages/employees/Profile';
 import Employees from './pages/employees/Employees';
 import UpdateEmployee from './pages/employees/UpdateEmployee';
-import Dashboard2 from './pages/Dashboard';
+import Dashboard from './pages/Dashboard';
 import DashboardStats from './pages/analytics/DashboardStats';
 import SalaryDistribution from './pages/analytics/SalaryDistribution';
 import DepartmentPerformance from './pages/analytics/DepartmentPerformance';
@@ -16,6 +16,9 @@ import HiringTrends from './pages/analytics/HiringTrends';
 import RetentionRate from './pages/analytics/RetentionRate';
 import PerformanceTrends from './pages/analytics/PerformanceTrends';
 import CustomQuery from './pages/analytics/CustomQuery';
+import ReportingSystem from './pages/reports/ReportingSystem';
+import FileManagement from './pages/files/FileManagement';
+import CustomReportBuilder from './pages/reports/CustomReportBuilder';
 
 const queryClient = new QueryClient();
 
@@ -45,7 +48,7 @@ function App() {
             path="/dashboard"
             element={
               <ProtectedRoute>
-                <Dashboard2 />
+                <Dashboard />
               </ProtectedRoute>
             }
           />
@@ -141,6 +144,30 @@ function App() {
             element={
               <CustomQuery />
             } 
+          />
+          <Route
+          path="/files"
+          element={
+          <ProtectedRoute>
+            <FileManagement />
+          </ProtectedRoute>
+          }
+          />
+          <Route
+          path="/reports"
+          element={
+          <ProtectedRoute>
+            <ReportingSystem />
+          </ProtectedRoute>
+          }
+          />
+           <Route
+            path="/reports/custom-builder"
+            element={
+              <ProtectedRoute>
+                <CustomReportBuilder />
+              </ProtectedRoute>
+            }
           />
         </Routes>
       </BrowserRouter>

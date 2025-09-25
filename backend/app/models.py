@@ -1,7 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional
-from datetime import datetime
-from typing import Optional, List, Dict, Any
+from typing import List, Optional, Dict, Any
 
 class Employee(BaseModel):
     employee_id: Optional[str]= None
@@ -31,7 +29,7 @@ class NewEmployee(BaseModel):
     department: str
     position: str
     salary: float
-    join_date: str  
+    join_date: str
     performance_score: float
     is_active: bool
     skills: List[str]
@@ -77,3 +75,13 @@ class CustomQueryRequest(BaseModel):
     filters: Dict[str, Any]
     group_by: Optional[str] = None
     aggregation: Optional[str] = None
+
+# New models for Reports
+class ReportGenerationRequest(BaseModel):
+    template_id: str
+    filters: Optional[Dict[str, Any]] = None
+    scheduling: Optional[Dict[str, Any]] = None
+    email_recipients: Optional[List[str]] = None
+
+class ReportShareRequest(BaseModel):
+    recipients: List[str]

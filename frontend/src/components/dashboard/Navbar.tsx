@@ -9,10 +9,13 @@ const Navbar: React.FC = () => {
     { label: "Bulk Import", to: "/employees/import" },
     { label: "Bulk Export", to: "/employees/exportpage" },
     { label: "Profile", to: "/auth/profile" },
+    { label: "Files", to: "/files" },
+    { label: "Reports", to: "/reports" },
+    { label: "Analytics", to: "/analytics/dashboard-stats" },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 z-50 bg-white shadow-md w-full">
+    <nav className=" top-0 left-0 z-50 bg-white shadow-md w-full">
       <div className="flex justify-center gap-6 items-center h-16 mx-12 px-12"> 
         <div className="flex  gap-10"> 
           {navItems.map((item) => (

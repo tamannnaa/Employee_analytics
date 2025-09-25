@@ -4,6 +4,7 @@ import type { ProfileData } from "../../types/auth";
 import ProfileField from "../../components/profile/ProfileField";
 import ProfileSkills from "../../components/profile/ProfileSkills";
 import ProfileActions from "../../components/profile/ProfileActions";
+import Navbar from "../../components/dashboard/Navbar";
 
 const emptyProfile: ProfileData = {
   name: "",
@@ -45,8 +46,11 @@ export default function Profile() {
   };
 
   return (
-    <div className="w-400 h-220 bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200 flex justify-center items-center py-20 px-6">
-      <div className="bg-white shadow-xl rounded-xl p-10 w-180 max-w-3xl border border-blue-100">
+    <div>
+      <Navbar/>
+    <div className="w-500 h-220 bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200 flex justify-center items-center py-4 px-6">
+      
+      <div className="bg-white shadow-xl rounded-xl p-10 w-500 max-w-3xl border border-blue-100">
         <br />
         <h1 className="text-3xl font-extrabold text-blue-700 mb-8 text-center">
           Profile
@@ -146,7 +150,11 @@ export default function Profile() {
         <div className="text-center mt-4">
           <a className="text-blue-600" href="/dashboard">Go to Home</a>
         </div>
+        <div className="text-center mt-4">
+          <a className="text-blue-600" href="/logout">Logout</a>
+        </div>
       </div>
+    </div>
     </div>
   );
 }

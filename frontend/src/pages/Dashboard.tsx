@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import {api} from '../api/axios'
-import { Autocomplete, TextField } from "@mui/material";
 import Navbar from "../components/dashboard/Navbar";
 import ActionsSection from "../components/dashboard/ActionsSection";
 import DepartmentsSection from "../components/dashboard/DepartmentsSection";

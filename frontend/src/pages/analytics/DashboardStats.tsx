@@ -31,6 +31,7 @@ const CHART_COLORS = [
   colors.rose, colors.cyan, colors.amber, colors.indigo
 ];
 
+
 const DashboardStats = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -402,7 +403,7 @@ const ExportButtons = () => {
 
   // --- PageHeader ---
   const PageHeader = ({ title, description, children }: any) => (
-    <div style={{ margin: '0 auto', maxWidth: '1600px', padding: '60px 60px', background: 'linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3730a3 100%)', borderRadius: '24px 24px 0 0', color: 'white', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', borderBottom: '4px solid #1d4ed8', display: 'flex', flexDirection: 'column', gap: '32px' }}>
+    <div style={{ margin: '0 auto', width: '1500px', padding: '60px 60px', background: 'linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3730a3 100%)', borderRadius: '24px 24px 0 0', color: 'white', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', borderBottom: '4px solid #1d4ed8', display: 'flex', flexDirection: 'column', gap: '32px' }}>
       <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '32px' }}>
         <div style={{ flex: '1', minWidth: '400px' }}>
           <h1 style={{ fontSize: '4rem', fontWeight: '800', marginBottom: '24px', background: 'linear-gradient(to right, #ffffff, #dbeafe, #c7d2fe)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: '1.1' }}>
