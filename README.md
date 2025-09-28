@@ -261,6 +261,8 @@ frontend/
 ### 📋 Prerequisites
 ```bash
 # Required software versions
+React 18 >= 18.0.0
+TypeScript >= ^5.0.0
 Node.js >= 18.0.0
 Python >= 3.11.0
 MongoDB >= 6.0.0
