@@ -21,19 +21,19 @@ This is a **production-ready enterprise solution** that transforms traditional e
 ## 🛠 COMPREHENSIVE TECH STACK
 
 ### 🎨 Frontend Technologies
-| Technology              | Purpose                                 | Version                  |
-|-------------------------|-----------------------------------------|--------------------------|
-| **React 18**            | Frontend framework                      | ^18.2.0                  |
-| **TypeScript**          | Type safety & development experience    | ^5.0.0                   |
-| **Vite**                | Build tool & dev server                 | ^4.4.0                   |
-| **TanStack Query**      | Server state management                 | ^4.32.0                  |
-| **React Router**        | Client-side routing                     | ^6.15.0                  |
-| **Tailwind CSS**        | Utility-first styling                   | ^3.3.0                   |
-| **Recharts**            | Data visualization library              | ^2.8.0                   |
-| **React Hook Form**     | Form management                         | ^7.45.0                  |
-| **Axios**               | HTTP client                             | ^1.5.0                   |
-| **React Hot Toast**     | Notification system                     | ^2.4.0                   |
-| **Lucide React**        | Icon library                            | ^0.263.0                 |
+| Technology | Purpose | Version |
+|------------|---------|---------|
+| **React 18** | Frontend framework | ^18.2.0 |
+| **TypeScript** | Type safety & development experience | ^5.0.0 |
+| **Vite** | Build tool & dev server | ^4.4.0 |
+| **TanStack Query** | Server state management | ^4.32.0 |
+| **React Router** | Client-side routing | ^6.15.0 |
+| **Tailwind CSS** | Utility-first styling | ^3.3.0 |
+| **Recharts** | Data visualization library | ^2.8.0 |
+| **React Hook Form** | Form management | ^7.45.0 |
+| **Axios** | HTTP client | ^1.5.0 |
+| **React Hot Toast** | Notification system | ^2.4.0 |
+| **Lucide React** | Icon library | ^0.263.0 |
 
 ### 🔧 Backend Technologies
 | Technology | Purpose | Version |
@@ -308,10 +308,7 @@ cp .env.example .env
 
 #### 4️⃣ Database Configuration
 ```bash
-# Start MongoDB service
-sudo systemctl start mongod  # Linux
-brew services start mongodb  # macOS
-
+# Start and connect mongodb service beforehand
 # Import sample data
 mongoimport --db employee_analytics --collection employees --file backend/data/sample_data.json --jsonArray
 ```
@@ -329,15 +326,9 @@ SECRET_KEY=your-super-secret-jwt-key-here
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 
-# Email Service (Optional)
-SMTP_SERVER=smtp.gmail.com
-SMTP_PORT=587
-EMAIL_USER=your-email@gmail.com
-EMAIL_PASSWORD=your-app-password
-
 # File Storage
 MAX_FILE_SIZE=10485760  # 10MB
-ALLOWED_FILE_TYPES=pdf,doc,docx,xls,xlsx,png,jpg,jpeg,gif
+ALLOWED_FILE_TYPES=pdf,doc,docx,xls,xlsx,png,jpg,jpeg
 ```
 
 **Frontend (.env)**
@@ -450,78 +441,11 @@ npm run dev
 
 ---
 
-## 🧪 TESTING & DEVELOPMENT
-
-### 📋 Testing Framework
-```bash
-# Backend testing with pytest
-cd backend
-pytest tests/ -v --cov=app
-
-# Frontend testing with Vitest
-cd frontend
-npm run test
-npm run test:coverage
-```
-
-### 🔧 Development Tools
-```bash
-# Code formatting
-black backend/app/  # Python
-prettier --write frontend/src/  # TypeScript/React
-
-# Linting
-flake8 backend/app/  # Python
-npm run lint frontend/  # ESLint for frontend
-
-# Type checking
-mypy backend/app/  # Python
-npm run type-check frontend/  # TypeScript
-```
-
 ### 📊 Performance Monitoring
 - **Backend**: FastAPI built-in metrics and logging
 - **Frontend**: Vite bundle analyzer and React DevTools
 - **Database**: MongoDB Compass for query performance
 - **API**: Postman collections for endpoint testing
-
----
-
-## 🚀 PRODUCTION DEPLOYMENT
-
-### 🐳 Docker Support
-```yaml
-# docker-compose.yml
-version: '3.8'
-services:
-  backend:
-    build: ./backend
-    ports:
-      - "8000:8000"
-    environment:
-      - MONGODB_URL=mongodb://mongo:27017
-  
-  frontend:
-    build: ./frontend
-    ports:
-      - "3000:3000"
-  
-  mongo:
-    image: mongo:6.0
-    ports:
-      - "27017:27017"
-    volumes:
-      - mongo_data:/data/db
-
-volumes:
-  mongo_data:
-```
-
-### ☁️ Cloud Deployment Options
-- **Frontend**: Vercel, Netlify, AWS S3 + CloudFront
-- **Backend**: AWS EC2, Google Cloud Run, Heroku
-- **Database**: MongoDB Atlas, AWS DocumentDB
-- **File Storage**: AWS S3, Google Cloud Storage
 
 ---
 
@@ -540,58 +464,3 @@ volumes:
 - **User Analytics**: Usage pattern tracking
 
 ---
-
-## 🤝 CONTRIBUTING
-
-### 📝 Development Workflow
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Make changes and add tests
-4. Commit changes (`git commit -m 'Add amazing feature'`)
-5. Push to branch (`git push origin feature/amazing-feature`)
-6. Open Pull Request
-
-### 📋 Code Standards
-- **Python**: Follow PEP 8, use type hints
-- **TypeScript**: Strict mode enabled, proper typing
-- **React**: Functional components with hooks
-- **Testing**: Maintain >80% code coverage
-- **Documentation**: Update README and API docs
-
----
-
-## 📄 LICENSE
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👥 SUPPORT & COMMUNITY
-
-- **Documentation**: [Project Wiki](https://github.com/your-username/employee-analytics-system/wiki)
-- **Issues**: [GitHub Issues](https://github.com/your-username/employee-analytics-system/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/employee-analytics-system/discussions)
-- **Email**: support@yourcompany.com
-
----
-
-## 🎯 ROADMAP
-
-### 📅 Upcoming Features
-- [ ] **Advanced AI Analytics**: ML-powered insights and predictions
-- [ ] **Mobile App**: React Native companion app
-- [ ] **Advanced Workflows**: Custom approval processes
-- [ ] **Integration APIs**: Third-party HR system integration
-- [ ] **Advanced Security**: SSO and LDAP integration
-- [ ] **Multi-tenant Support**: Organization-level isolation
-
-### 🔄 Recent Updates
-- [x] **v2.0.0**: Full-stack React + TypeScript frontend
-- [x] **v1.8.0**: Advanced file management system
-- [x] **v1.7.0**: Custom reporting engine
-- [x] **v1.6.0**: Real-time analytics dashboard
-- [x] **v1.5.0**: JWT authentication system
-
----
-
-**Built with ❤️ by the Development Team**
