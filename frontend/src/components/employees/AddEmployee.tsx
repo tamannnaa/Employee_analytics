@@ -14,6 +14,7 @@ const AddEmployeeForm: React.FC<AddEmployeeFormProps> = ({
   onAdd,
 }) => (
   <div className="flex gap-3 mb-6">
+    <br />
     <input
       type="text"
       placeholder="Employee Name"
@@ -34,6 +35,7 @@ const AddEmployeeForm: React.FC<AddEmployeeFormProps> = ({
     >
       Add
     </button>
+    <br />
   </div>
 );
 export default AddEmployeeForm;

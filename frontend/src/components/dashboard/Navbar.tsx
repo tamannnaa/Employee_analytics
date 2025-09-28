@@ -4,6 +4,7 @@ const Navbar: React.FC = () => {
   const location = useLocation();
 
   const navItems = [
+    { label: "Home", to: "/dashboard" },
     { label: "Statistics", to: "/employees/statistics" },
     { label: "Actions", to: "/employees" },
     { label: "Bulk Import", to: "/employees/import" },

@@ -3,8 +3,9 @@ import { api } from "../../api/axios";
 import FilterEmployee from "../../components/employees/FilterEmployee";
 import AddEmployeeForm from "../../components/employees/AddEmployee";
 import EmployeeTable from "../../components/employees/EmployeeTable";
+import Navbar from "../../components/dashboard/Navbar";
 
-interface Employee {
+export interface Employee {
   id: string;
   name: string;
   department: string;
@@ -52,29 +53,37 @@ const Employees = () => {
   }, []);
 
   return (
-    <div className="w-400 min-h-screen bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200 flex justify-center items-start py-20 px-20">
-      <div className="bg-white shadow-xl rounded-xl p-24 m-20 w-380 border border-blue-100">
-        <h2 className="text-2xl font-bold text-blue-700 mb-6 text-center">
+    <div className="min-h-screen bg-gradient-to-br w-[1500px] flex flex-col justify-center items-center from-slate-50 to-blue-50 font-sans text-gray-800">
+            <Navbar/>
+      <div className="bg-white shadow-xl w-[1400px] mx-auto rounded-xl p-24 m-20 border border-blue-100">
+        <br /><br />
+        <h2 className="text-2xl font-bold text-blue-900 mb-6 text-center">
           Employees
         </h2>
+        <div className="mb-6 flex flex-col items-center justify-between gap-4 rounded-lg bg-white p-4 sm:flex-row">
+        <FilterEmployee department={department} setDepartment={setDepartment} onFilter={() => fetchEmployees(department)} /> 
+          <br /><br />
+          </div>
+          <br />
 
-        <FilterEmployee department={department} setDepartment={setDepartment} onFilter={() => fetchEmployees(department)} />
 
+          <div className="mb-6 rounded-lg bg-white p-6 shadow-md animate-fade-in-down">
         <AddEmployeeForm
           newEmployeeName={newEmployeeName}
           setNewEmployeeName={setNewEmployeeName}
           newEmployeeDept={newEmployeeDept}
           setNewEmployeeDept={setNewEmployeeDept}
           onAdd={handleAddEmployee}
-        />
-
-        <div>
-          <a className="text-blue-600" href="/dashboard">
-            Go to Home
-          </a>
+        /> <br />
         </div>
+        <br />
+        
 
+         <div className="mt-8 overflow-hidden rounded-lg bg-white shadow-md">
         <EmployeeTable employees={employees} />
+        <br />
+        </div>
+        <br />
       </div>
     </div>
   );

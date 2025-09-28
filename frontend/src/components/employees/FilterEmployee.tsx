@@ -6,6 +6,7 @@ interface FilterProps {
 
 const FilterEmployee: React.FC<FilterProps> = ({ department, setDepartment, onFilter }) => (
   <div className="flex gap-3 mb-6">
+    <br />
     <input
       type="text"
       placeholder="Filter by department"
@@ -15,10 +16,11 @@ const FilterEmployee: React.FC<FilterProps> = ({ department, setDepartment, onFi
     />
     <button
       onClick={onFilter}
-      className="bg-white text-blue-600 hover:bg-blue-600 h-8 w-20 hover:text-white font-semibold px-4 py-2 rounded-lg shadow-md transition-transform transform hover:scale-[1.02]"
+      className="bg-white text-blue-800 hover:bg-blue-800 h-8 w-20 hover:text-white font-semibold px-4 py-2 rounded-lg shadow-md transition-transform transform hover:scale-[1.02]"
     >
       Filter
     </button>
+    <br />
   </div>
 );
  export default FilterEmployee

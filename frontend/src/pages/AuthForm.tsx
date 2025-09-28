@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../css/loginsignup.css"
-import Register from "./Register";
-import Login from "./Login";
+import Register from "../components/auth/Register";
+import Login from "../components/auth/Login";
 import { login,register } from "../api/auth";
 import { useAuth } from "../context/Authcontext";
 import { useNavigate } from "react-router-dom";

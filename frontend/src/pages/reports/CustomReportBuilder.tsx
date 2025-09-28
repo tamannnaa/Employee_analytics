@@ -327,7 +327,7 @@ const CustomReportBuilder: React.FC = () => {
                 {/* Header */}
                 <br /><br /><br />
                 <div className="mb-8">
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-700 to-blue-950 bg-clip-text text-transparent mb-2">
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-800 to-blue-950 bg-clip-text text-transparent mb-2">
                         Custom Report Builder <br /><br />
                     </h1>
                     <p className="text-gray-600 text-lg">Create personalized reports with your specific data requirements</p><br />

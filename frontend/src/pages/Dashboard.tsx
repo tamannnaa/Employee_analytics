@@ -81,9 +81,9 @@ const Dashboard: React.FC = () => {
   }, []);
 
   return (
-    <div>
-        <div><Navbar/></div> <br /> <br /> <br /> <br /> <br />
-        
+    <div className="min-h-screen bg-gradient-to-br w-[1500px] flex flex-col justify-center items-center from-slate-50 to-blue-50 font-sans text-gray-800">
+            <Navbar />
+            <br /><br />
         <div className=" px-6">
             <div><h2 className="text-3xl text-gray-900 font-bold mb-10 ">Employee Dashboard</h2></div><br />
 

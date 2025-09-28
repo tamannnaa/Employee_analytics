@@ -1,9 +1,13 @@
+import type { Employee } from "../../pages/employees/Employees";
+
+
 interface EmployeeTableProps {
   employees: Employee[];
 }
 
 const EmployeeTable: React.FC<EmployeeTableProps> = ({ employees }) => (
   <div className="overflow-x-auto">
+    <br />
     <table className="w-full border-collapse border border-gray-200">
       <thead>
         <tr className="bg-blue-100 text-left">
@@ -22,6 +26,7 @@ const EmployeeTable: React.FC<EmployeeTableProps> = ({ employees }) => (
         ))}
       </tbody>
     </table>
+    <br />
   </div>
 );
 export default EmployeeTable;

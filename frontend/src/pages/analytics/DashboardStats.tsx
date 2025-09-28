@@ -4,9 +4,10 @@ import {
   CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area
 } from 'recharts';
 import {
-  Users, TrendingUp, DollarSign, Award, Download, RefreshCw, Building2,ChevronDown,
+  Users, DollarSign, Download, RefreshCw, Building2,ChevronDown,
   UserPlus, AlertCircle
 } from 'lucide-react';
+import Navbar from '../../components/dashboard/Navbar';
 
 const API_BASE = 'http://localhost:8000/analytics';
 
@@ -42,7 +43,7 @@ const DashboardStats = () => {
   const [selectedDepartment, setSelectedDepartment] = useState('all');
   
   // State for all analytics data
-  const [dashboardData, setDashboardData] = useState<any>({
+  const [dashboardData, setDashboardData] = useState<{}>({
     total_employees: 0,
     active_projects: 0,
     average_salary: 0,
@@ -51,7 +52,7 @@ const DashboardStats = () => {
     top_department: ''
   });
   
-  const [departmentData, setDepartmentData] = useState<any[]>([]);
+  const [departmentData, setDepartmentData] = useState<[]>([]);
   const [salaryData, setSalaryData] = useState<any>({
     distribution: [],
     statistics: {}
@@ -346,57 +347,7 @@ const ExportDropdown = () => {
     </div>
   );
 };
-const ExportButtons = () => {
-  const buttonStyle = {
-    background: 'rgba(255, 255, 255, 0.2)',
-    padding: '12px 20px',
-    borderRadius: '8px',
-    border: '1px solid rgba(255, 255, 255, 0.3)',
-    color: 'white',
-    cursor: 'pointer',
-    fontSize: '0.875rem',
-    fontWeight: '600',
-    transition: 'all 0.2s',
-    display: 'flex',
-    alignItems: 'center',
-    gap: '8px'
-  };
-  
-  return (
-    <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-      <button
-        onClick={() => exportData('json', 'employees')}
-        disabled={loading}
-        style={buttonStyle}
-        onMouseEnter={e => !loading && (e.currentTarget.style.background = 'rgba(255, 255, 255, 0.3)')}
-        onMouseLeave={e => !loading && (e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)')}
-      >
-        📄 JSON
-      </button>
-      
-      <button
-        onClick={() => exportData('csv', 'employees')}
-        disabled={loading}
-        style={buttonStyle}
-        onMouseEnter={e => !loading && (e.currentTarget.style.background = 'rgba(255, 255, 255, 0.3)')}
-        onMouseLeave={e => !loading && (e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)')}
-      >
-        📊 CSV
-      </button>
-      
-      <button
-        onClick={() => exportData('xlsx', 'employees')}
-        disabled={loading}
-        style={buttonStyle}
-        onMouseEnter={e => !loading && (e.currentTarget.style.background = 'rgba(255, 255, 255, 0.3)')}
-        onMouseLeave={e => !loading && (e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)')}
-      >
-        📈 Excel
-      </button>
-    </div>
-  );
-};
-  // Load data on component mount and when filters change
+
   useEffect(() => {
     refreshAllData();
   }, [selectedDepartment, dateRange]);
@@ -502,6 +453,7 @@ const ExportButtons = () => {
   // --- Main Render ---
   return (
     <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #e0e7ff 100%)', fontFamily: '"Inter", system-ui, sans-serif', padding: '0' }}>
+      <Navbar/>
       <div style={{ maxWidth: '1800px', margin: '0 auto' }}>
         {/* Header */}
         <PageHeader
@@ -583,9 +535,18 @@ const ExportButtons = () => {
               <div style={{ display: 'flex', alignItems: 'center', marginBottom: '40px' }}>
                 <div style={{ padding: '20px', background: '#dbeafe', borderRadius: '16px', marginRight: '24px' }}>
                   <Users style={{ width: '40px', height: '40px', color: '#2563eb' }} />
-                </div>
-                <h3 style={{ fontSize: '2.25rem', fontWeight: '700', color: '#1e293b' }}>Department Distribution</h3>
-              </div>
+                  </div>
+                  <h3 style={{ fontSize: '2.25rem', fontWeight: '700', color: '#1e293b', marginRight: 'auto' }}>
+                    Department Distribution
+                    </h3>
+                    <div>
+                      <a 
+                      href="/analytics/department-performance" 
+                      style={{ padding: '10px 20px', backgroundColor: '#eff6ff', color: '#3b82f6',borderRadius: '12px', textDecoration: 'none', fontWeight: '600', fontSize: '1rem' }}>
+                        View more
+                        </a>
+                    </div>
+                  </div>
               <ResponsiveContainer width="100%" height={400}>
                 <PieChart>
                   <Pie
@@ -623,11 +584,18 @@ const ExportButtons = () => {
           {hiringTrends.length > 0 && (
             <div style={{ background: 'white', borderRadius: '24px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', border: '1px solid #e2e8f0', margin: '0', marginBottom: '16px', padding: '40px' }}>
               <div style={{ display: 'flex', alignItems: 'center', marginBottom: '40px' }}>
-                <div style={{ padding: '20px', background: '#fed7aa', borderRadius: '16px', marginRight: '24px' }}>
-                  <TrendingUp style={{ width: '40px', height: '40px', color: '#ea580c' }} />
-                </div>
-                <h3 style={{ fontSize: '2.25rem', fontWeight: '700', color: '#1e293b' }}>Hiring vs Departures</h3>
+                <div style={{ padding: '20px', background: '#dbeafe', borderRadius: '16px', marginRight: '24px' }}>
+                  <Users style={{ width: '40px', height: '40px', color: '#2563eb' }} />
+                  </div>
+                  <h3 style={{ fontSize: '2.25rem', fontWeight: '700', color: '#1e293b', marginRight: 'auto' }}>
+                  Hiring vs Departures</h3>
+                  <a 
+                      href="/analytics/hiring-trends" 
+                      style={{ padding: '10px 20px', backgroundColor: '#eff6ff', color: '#3b82f6',borderRadius: '12px', textDecoration: 'none', fontWeight: '600', fontSize: '1rem' }}>
+                        View more
+                        </a>
               </div>
+              
               <ResponsiveContainer width="100%" height={400}>
                 <BarChart data={hiringTrends} barGap={12}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" strokeWidth={1} />
@@ -653,11 +621,17 @@ const ExportButtons = () => {
           {/* Performance Trends */}
           {performanceData.monthly_trends && performanceData.monthly_trends.length > 0 && (
             <div style={{ background: 'white', borderRadius: '24px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', border: '1px solid #e2e8f0', margin: '0', marginBottom: '16px', padding: '40px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', marginBottom: '40px' }}>
-                <div style={{ padding: '20px', background: '#e9d5ff', borderRadius: '16px', marginRight: '24px' }}>
-                  <Award style={{ width: '40px', height: '40px', color: '#7c3aed' }} />
-                </div>
-                <h3 style={{ fontSize: '2.25rem', fontWeight: '700', color: '#1e293b' }}>Performance Trends</h3>
+               <div style={{ display: 'flex', alignItems: 'center', marginBottom: '40px' }}>
+                <div style={{ padding: '20px', background: '#dbeafe', borderRadius: '16px', marginRight: '24px' }}>
+                  <Users style={{ width: '40px', height: '40px', color: '#2563eb' }} />
+                  </div>
+                  <h3 style={{ fontSize: '2.25rem', fontWeight: '700', color: '#1e293b', marginRight: 'auto' }}>
+                    Performance Trends</h3>
+                    <a 
+                      href="/analytics/performance-trends" 
+                      style={{ padding: '10px 20px', backgroundColor: '#eff6ff', color: '#3b82f6',borderRadius: '12px', textDecoration: 'none', fontWeight: '600', fontSize: '1rem' }}>
+                        View more
+                        </a>
               </div>
               <ResponsiveContainer width="100%" height={400}>
                 <AreaChart data={performanceData.monthly_trends}>
@@ -695,11 +669,17 @@ const ExportButtons = () => {
           {/* Salary Distribution */}
           {salaryData.distribution && salaryData.distribution.length > 0 && (
             <div style={{ background: 'white', borderRadius: '24px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', border: '1px solid #e2e8f0', margin: '0', marginBottom: '16px', padding: '40px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', marginBottom: '40px' }}>
-                <div style={{ padding: '20px', background: '#c7d2fe', borderRadius: '16px', marginRight: '24px' }}>
-                  <DollarSign style={{ width: '40px', height: '40px', color: '#4338ca' }} />
-                </div>
-                <h3 style={{ fontSize: '2.25rem', fontWeight: '700', color: '#1e293b' }}>Salary Distribution</h3>
+               <div style={{ display: 'flex', alignItems: 'center', marginBottom: '40px' }}>
+                <div style={{ padding: '20px', background: '#dbeafe', borderRadius: '16px', marginRight: '24px' }}>
+                  <Users style={{ width: '40px', height: '40px', color: '#2563eb' }} />
+                  </div>
+                  <h3 style={{ fontSize: '2.25rem', fontWeight: '700', color: '#1e293b', marginRight: 'auto' }}>
+                  Salary Distribution</h3>
+                  <a 
+                      href="/analytics/salary-distribution" 
+                      style={{ padding: '10px 20px', backgroundColor: '#eff6ff', color: '#3b82f6',borderRadius: '12px', textDecoration: 'none', fontWeight: '600', fontSize: '1rem' }}>
+                        View more
+                        </a>
               </div>
               <ResponsiveContainer width="100%" height={400}>
                 <BarChart data={salaryData.distribution} barGap={12}>

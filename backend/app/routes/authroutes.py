@@ -3,6 +3,8 @@ from app.models import Logindetails,Registerdetails,UpdateEmployee
 from app.utils.auth import hashpass, verifypass,createtoken,decodetoken
 from app.database import get_database
 from fastapi.security import HTTPAuthorizationCredentials,HTTPBearer
+import re
+from datetime import datetime
 security=HTTPBearer()
 from bson import ObjectId
 
@@ -22,19 +24,51 @@ def login(data:Logindetails):
     return {"message":"Login successful","token":token}
 
 @router.post("/register")
-def register(data:Registerdetails):
-    if(empcollection.find_one({"email":data.email})):
-        raise HTTPException(status_code=401,detail="User already registered")
+def register(data: Registerdetails):
+    # Check if user already exists
+    if empcollection.find_one({"email": data.email}):
+        raise HTTPException(status_code=400, detail="User already registered")
     
-    hashedpw=hashpass(data.password)
-    user={
-        "name":data.name,
-        "email":data.email,
-        "hashed_password":hashedpw
+    employee_id = get_next_employee_id()
+    while empcollection.find_one({"employee_id": employee_id}):
+        employee_id = f"EMP{datetime.now().strftime('%Y%m%d%H%M%S')}"
+    
+    hashedpw = hashpass(data.password)
+    
+    # Create user document with all required fields
+    user = {
+        "employee_id": employee_id,
+        "name": data.name,
+        "email": data.email,
+        "hashed_password": hashedpw,
+        "department": getattr(data, 'department', 'Unassigned'),
+        "position": getattr(data, 'position', 'Employee'),
+        "salary": getattr(data, 'salary', 0),
+        "join_date": datetime.now().strftime("%Y-%m-%d"),
+        "performance_score": getattr(data, 'performance_score', 0.0),
+        "is_active": True,
+        "skills": getattr(data, 'skills', []),
+        "created_at": datetime.now().isoformat(),
+        "updated_at": datetime.now().isoformat()
     }
-    empcollection.insert_one(user)
-    token=createtoken({"sub":data.email})
-    return {"message":"Registration succesful","token":token}
+    
+    # Insert user into database
+    result = empcollection.insert_one(user)
+    
+    if not result.inserted_id:
+        raise HTTPException(status_code=500, detail="Failed to create user")
+    
+    # Create token
+    token = createtoken({"sub": data.email})
+    
+    return {
+        "message": "Registration successful",
+        "token": token,
+        "employee_id": employee_id,
+        "user_id": str(result.inserted_id)
+    }
+
+
 
 @router.post("/logout")
 def logout():
@@ -91,3 +125,33 @@ def resetPassword(email:str):
         raise HTTPException(status_code=404, detail="Email not found")
     
     return {"message": f"Password reset link sent to {email}"}
+
+
+# Get next employee id
+def get_next_employee_id():
+    """
+    Generate the next available employee ID in format EMP001, EMP002, etc.
+    """
+    try:
+        # Find all employee IDs that match the pattern EMP followed by numbers
+        employees = list(empcollection.find(
+            {"employee_id": {"$regex": r"^EMP\d+$"}}, 
+            {"employee_id": 1}
+        ))
+        
+        if not employees:
+            return "EMP001"
+        
+        max_num = 0
+        for emp in employees:
+            match = re.match(r"EMP(\d+)", emp["employee_id"])
+            if match:
+                num = int(match.group(1))
+                max_num = max(max_num, num)
+        
+        next_num = max_num + 1
+        return f"EMP{next_num:03d}"  
+        
+    except Exception as e:
+        print(f"Error generating employee ID: {e}")
+        return f"EMP{datetime.now().strftime('%Y%m%d%H%M%S')}"  

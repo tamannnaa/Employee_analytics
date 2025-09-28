@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Legend } from "recharts";
+import { useEffect, useState } from "react";
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
 import { Award, TrendingUp, Star, Target } from "lucide-react";
+import Navbar from "../../components/dashboard/Navbar";
 
 const API_BASE = "http://localhost:8000/analytics";
 
@@ -40,7 +41,10 @@ const PerformanceTrends = () => {
   const highPerformerPercentage = ((highPerformers / totalEmployees) * 100).toFixed(1);
 
   return (
+    <div>
+      <Navbar/>
     <div style={{ 
+      width:'1500px',
       minHeight: '100vh', 
       background: 'linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #e0e7ff 100%)', 
       fontFamily: '"Inter", system-ui, sans-serif',
@@ -296,6 +300,7 @@ const PerformanceTrends = () => {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 };

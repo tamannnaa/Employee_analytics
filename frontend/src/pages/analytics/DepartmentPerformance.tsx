@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import { Building2, Users, DollarSign, TrendingUp } from "lucide-react";
+import Navbar from "../../components/dashboard/Navbar";
 
 const API_BASE = "http://localhost:8000/analytics";
 
@@ -30,15 +31,19 @@ const DepartmentPerformance = () => {
     (dept.employees || 0) > (top.employees || 0) ? dept : top, departmentData[0] || {});
 
   return (
+    <div>
+      <Navbar/>
     <div style={{ 
+      width: '1500px',
       minHeight: '100vh', 
       background: 'linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #e0e7ff 100%)', 
       fontFamily: '"Inter", system-ui, sans-serif',
       padding: '0'
     }}>
+      
       {/* Header */}
       <div style={{ 
-        maxWidth: '1800px', 
+        maxWidth: '1600px', 
         margin: '0 auto', 
         padding: '60px 80px', 
         background: 'linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3730a3 100%)', 
@@ -318,6 +323,7 @@ const DepartmentPerformance = () => {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 };

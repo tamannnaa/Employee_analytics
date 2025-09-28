@@ -1,20 +1,28 @@
+import React from 'react';
+
 const DepartmentsSection: React.FC<{ departments: Record<string, number> }> = ({ departments }) => (
-  <div>
-    <div><h2 className="text-3xl text-gray-900 font-bold mb-10 pt-24">Departments</h2></div><br /><br />
-        <div className="p-10">
-            <section id="departments" className="bg-white p-16 h-52 flex justify-center items-center w-250 rounded-lg shadow mb-8">
-          {Object.keys(departments).length > 0 ? (
-            <div className="grid grid-cols-2 md:grid-cols-3 w-200  gap-6">
-              {Object.keys(departments).map(dept => (
-                <div key={dept} className="bg-gray-50 p-4 rounded text-center shadow hover:shadow-md transition">
-                  <h4 className="font-semibold">{dept}</h4>
-                  <p className="text-2xl font-bold">{departments[dept]}</p>
-                </div>
-              ))}
-            </div>
-          ) : <p>No departments found</p>}
-        </section>
-        </div>
+  <div className="w-full py-12 bg-slate-50">
+    
+    
+    {/* Use max-width and auto margins to center the content and control its size on large screens */}
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="departments" className="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+        {Object.keys(departments).length > 0 ? (
+          // This responsive grid adjusts the number of columns based on screen size, preventing overflow
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+            {Object.entries(departments).map(([dept, count]) => (
+              <div key={dept} className="bg-gray-50 p-4 rounded-lg text-center shadow-sm hover:shadow-lg hover:scale-105 transition-transform duration-200 ease-in-out">
+                {/* Truncate ensures long department names don't break the layout */}
+                <h4 className="font-semibold text-gray-800 truncate" title={dept}>{dept}</h4>
+                <p className="text-3xl font-bold text-indigo-600">{count}</p>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="text-center text-gray-500 py-8">No department data available.</p>
+        )}
+      </section>
+    </div>
   </div>
 );
 

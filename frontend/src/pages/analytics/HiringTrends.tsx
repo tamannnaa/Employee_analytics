@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, AreaChart, Area } from "recharts";
 import { UserPlus, TrendingDown, TrendingUp, Users } from "lucide-react";
+import Navbar from "../../components/dashboard/Navbar";
 
 const API_BASE = "http://localhost:8000/analytics";
 
@@ -28,7 +29,11 @@ const HiringTrends = () => {
   const retentionRate = totalHires > 0 ? ((totalHires - totalDepartures) / totalHires * 100).toFixed(1) : 0;
 
   return (
+    <div>
+      <Navbar/>
+   
     <div style={{ 
+      width:'1500px',
       minHeight: '100vh', 
       background: 'linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #e0e7ff 100%)', 
       fontFamily: '"Inter", system-ui, sans-serif',
@@ -309,6 +314,7 @@ const HiringTrends = () => {
         </div>
       </div>
     </div>
+     </div>
   );
 };
 

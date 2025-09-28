@@ -6,12 +6,6 @@ interface Stats {
 }
 
 const StatisticsCards: React.FC<{ stats: Stats }> = ({ stats }) => {
-  const items = [
-    { title: "Total Employees", value: stats.total_employees, color: "text-blue-600" },
-    { title: "Average Salary", value: `$${stats.average_salary}`, color: "text-green-600" },
-    { title: "Active Employees", value: stats.active_employees, color: "text-teal-600" },
-    { title: "Inactive Employees", value: stats.inactive_employees, color: "text-red-600" },
-  ];
 
   return (
     <div>

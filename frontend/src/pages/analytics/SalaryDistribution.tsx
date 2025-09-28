@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from "recharts";
+import  { useEffect, useState } from "react";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer} from "recharts";
 import { DollarSign, TrendingUp, Calculator, Users } from "lucide-react";
+import Navbar from "../../components/dashboard/Navbar";
 
 const API_BASE = "http://localhost:8000/analytics";
 
@@ -33,7 +34,10 @@ const SalaryDistribution = () => {
     : 0;
 
   return (
+    <div>
+      <Navbar/>
     <div style={{ 
+      width:'1500px',
       minHeight: '100vh', 
       background: 'linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #e0e7ff 100%)', 
       fontFamily: '"Inter", system-ui, sans-serif',
@@ -408,6 +412,7 @@ const SalaryDistribution = () => {
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 };
