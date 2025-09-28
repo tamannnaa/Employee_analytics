@@ -5,6 +5,7 @@ import ProfileField from "../../components/profile/ProfileField";
 import ProfileSkills from "../../components/profile/ProfileSkills";
 import ProfileActions from "../../components/profile/ProfileActions";
 import Navbar from "../../components/dashboard/Navbar";
+import { logout } from "../../api/auth";
 
 const emptyProfile: ProfileData = {
   name: "",
@@ -45,6 +46,9 @@ export default function Profile() {
     setEditMode(false);
   };
 
+  const handlelogout = () => {
+    logout();
+  }
   return (
     <div>
       <Navbar/>
@@ -151,8 +155,9 @@ export default function Profile() {
           <a className="text-blue-600" href="/dashboard">Go to Home</a>
         </div>
         <div className="text-center mt-4">
-          <a className="text-blue-600" href="/logout">Logout</a>
+          <button className="text-blue-600" onClick={handlelogout}>Logout</button>
         </div>
+        
       </div>
     </div>
     </div>

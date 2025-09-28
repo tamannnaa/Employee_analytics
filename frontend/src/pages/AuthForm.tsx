@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../css/loginsignup.css"
 import Register from "./Register";
 import Login from "./Login";
@@ -13,6 +13,15 @@ const AuthForm: React.FC = () => {
   const [message, setMessage] = useState("");
   const auth = useAuth();
   const navigate = useNavigate();
+
+  useEffect(()=>{
+    const token=localStorage.getItem("token");
+    if(token){
+      console.log("Token found, navigating to dashboard");
+      navigate("/dashboard");
+    }
+    
+  },[navigate])
 
 
   const handleLoginChange = (e: React.ChangeEvent<HTMLInputElement>) => {

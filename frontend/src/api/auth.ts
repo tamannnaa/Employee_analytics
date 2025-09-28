@@ -23,6 +23,11 @@ export const getuser = async () => {
   return res.data;
 };
 
+export const logout = () => {
+  localStorage.removeItem("token");
+  window.location.href = "/"; // Redirect to login page
+}
+
 export const updateProfile = async (profileData: ProfileData) => {
   const token = localStorage.getItem("token");
   const res = await api.put("/auth/profile", profileData, {

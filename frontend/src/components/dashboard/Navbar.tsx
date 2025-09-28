@@ -8,10 +8,10 @@ const Navbar: React.FC = () => {
     { label: "Actions", to: "/employees" },
     { label: "Bulk Import", to: "/employees/import" },
     { label: "Bulk Export", to: "/employees/exportpage" },
-    { label: "Profile", to: "/auth/profile" },
     { label: "Files", to: "/files" },
     { label: "Reports", to: "/reports" },
     { label: "Analytics", to: "/analytics/dashboard-stats" },
+    { label: "Profile", to: "/auth/profile" },
   ];
 
   return (
